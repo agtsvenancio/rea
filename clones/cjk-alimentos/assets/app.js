@@ -48,12 +48,6 @@
     })[0];
   }
 
-  function contar(slug) {
-    return PRODUTOS.filter(function (p) {
-      return p.categoria === slug;
-    }).length;
-  }
-
   // ---------------------------------------------------------------
   // Mensagens do WhatsApp (mesmos textos do site original)
   // ---------------------------------------------------------------
@@ -442,7 +436,7 @@
 
   const PAGINAS = {
     inicio: function () {
-      var pilares = [
+      const pilares = [
         [
           "frota",
           "Frota refrigerada",
@@ -638,7 +632,7 @@
     },
 
     catalogo: function () {
-      var filtros = [{ slug: "todas", nome: "Todas", icone: "squares-four" }]
+      const filtros = [{ slug: "todas", nome: "Todas", icone: "squares-four" }]
         .concat(CATS)
         .map(function (c) {
           return (
@@ -653,7 +647,7 @@
           );
         })
         .join("");
-      var ordenados = PRODUTOS.slice().sort(function (a, b) {
+      const ordenados = PRODUTOS.slice().sort(function (a, b) {
         return a.nome.localeCompare(b.nome, "pt-BR");
       });
       return (
@@ -694,15 +688,15 @@
     },
 
     categoria: function () {
-      var slug = new URLSearchParams(location.search).get("c");
-      var c = categoria(slug) || CATS[0];
+      const slug = new URLSearchParams(location.search).get("c");
+      const c = categoria(slug) || CATS[0];
       document.title = c.nome + " | " + S.nome;
-      var produtos = PRODUTOS.filter(function (p) {
+      const produtos = PRODUTOS.filter(function (p) {
         return p.categoria === c.slug;
       }).sort(function (a, b) {
         return a.nome.localeCompare(b.nome, "pt-BR");
       });
-      var abas = CATS.map(function (x) {
+      const abas = CATS.map(function (x) {
         return (
           '<li><a class="pilula" href="' +
           linkCategoria(x) +
@@ -876,14 +870,14 @@
             return i && i.slug && i.nome;
           })
         : [];
-    } catch (e) {
+    } catch {
       return [];
     }
   }
   function salvarLista(l) {
     try {
       localStorage.setItem(CHAVE, JSON.stringify(l));
-    } catch (e) {
+    } catch {
       /* navegador sem armazenamento */
     }
     document.dispatchEvent(new CustomEvent(EVENTO, { detail: { list: l } }));
