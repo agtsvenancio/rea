@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meu CRM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <h1>Meu CRM</h1>
+      <nav id="abas">
+        <button data-aba="hoje" class="ativa">Hoje</button>
+        <button data-aba="funil">Funil</button>
+        <button data-aba="contatos">Contatos</button>
+        <button data-aba="modelos">Mensagens</button>
+        <button data-aba="config">Ajustes</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOJE -->
+      <section id="aba-hoje" class="aba ativa">
+        <div class="resumo" id="resumo"></div>
+        <h2>Follow-ups para fazer</h2>
+        <p class="dica">Tarefas vencidas e de hoje. Clique em WhatsApp para abrir a conversa já com a mensagem pronta.</p>
+        <ul id="lista-hoje" class="lista"></ul>
+        <h2>Próximos dias</h2>
+        <ul id="lista-proximos" class="lista"></ul>
+      </section>
+
+      <!-- FUNIL -->
+      <section id="aba-funil" class="aba">
+        <div class="barra">
+          <input id="busca-funil" type="search" placeholder="Buscar negócio ou cliente…" />
+          <button class="primario" id="novo-negocio">+ Negócio</button>
+        </div>
+        <div id="kanban" class="kanban"></div>
+      </section>
+
+      <!-- CONTATOS -->
+      <section id="aba-contatos" class="aba">
+        <div class="barra">
+          <input id="busca-contatos" type="search" placeholder="Buscar por nome, telefone, empresa, cidade ou etiqueta…" />
+          <button class="primario" id="novo-contato">+ Contato</button>
+        </div>
+        <table class="tabela">
+          <thead>
+            <tr><th>Nome</th><th>WhatsApp</th><th>Empresa</th><th>Cidade</th><th>Etiquetas</th><th></th></tr>
+          </thead>
+          <tbody id="tabela-contatos"></tbody>
+        </table>
+      </section>
+
+      <!-- MODELOS -->
+      <section id="aba-modelos" class="aba">
+        <div class="barra">
+          <p class="dica">Modelos de mensagem para WhatsApp. Use <code>{nome}</code>, <code>{empresa}</code> e <code>{negocio}</code> que o CRM preenche sozinho.</p>
+          <button class="primario" id="novo-modelo">+ Modelo</button>
+        </div>
+        <ul id="lista-modelos" class="lista"></ul>
+      </section>
+
+      <!-- AJUSTES -->
+      <section id="aba-config" class="aba">
+        <h2>Etapas do funil</h2>
+        <p class="dica">Crie, renomeie ou reordene as etapas. Sem limite.</p>
+        <ul id="lista-etapas" class="lista"></ul>
+        <button id="nova-etapa">+ Etapa</button>
+
+        <h2>Seus dados</h2>
+        <p class="dica">Tudo fica salvo neste navegador. Faça um backup de vez em quando.</p>
+        <div class="botoes">
+          <button id="exportar">Baixar backup (.json)</button>
+          <label class="botao">Restaurar backup<input type="file" id="importar" accept=".json" hidden /></label>
+          <button id="exportar-csv">Baixar contatos (.csv)</button>
+          <label class="botao">Importar contatos (.csv)<input type="file" id="importar-csv" accept=".csv,text/csv" hidden /></label>
+        </div>
+        <div class="botoes">
+          <button id="demo">Carregar exemplo</button>
+          <button id="apagar" class="perigo">Apagar tudo</button>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="janela">
+      <form method="dialog" id="janela-form"></form>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
