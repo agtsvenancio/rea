@@ -26,12 +26,12 @@ Para ver como funciona, vá em **Ajustes > Carregar exemplo**.
 
 ## Onde melhora em relação ao Bitrix24
 
-| Bitrix24 | Meu CRM |
-| --- | --- |
-| Tela pesada, muitos menus | 5 abas, tudo a 1 clique |
-| WhatsApp exige conector/pago | Botão de WhatsApp em todo lugar, grátis |
-| Cobra por usuário e limita recursos no plano grátis | Sem plano, sem limite |
-| Ruim no celular | Feito para funcionar no celular |
+| Bitrix24                                            | Meu CRM                                 |
+| --------------------------------------------------- | --------------------------------------- |
+| Tela pesada, muitos menus                           | 5 abas, tudo a 1 clique                 |
+| WhatsApp exige conector/pago                        | Botão de WhatsApp em todo lugar, grátis |
+| Cobra por usuário e limita recursos no plano grátis | Sem plano, sem limite                   |
+| Ruim no celular                                     | Feito para funcionar no celular         |
 
 ## Próximos passos possíveis
 

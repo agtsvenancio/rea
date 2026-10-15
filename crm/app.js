@@ -15,14 +15,36 @@ function etapasPadrao() {
 
 function modelosPadrao() {
   return [
-    { id: id(), nome: "Primeiro contato", texto: "Olá {nome}, tudo bem? Aqui é da CJK Alimentos. Posso te mandar nossa tabela de preços desta semana?" },
-    { id: id(), nome: "Cobrar orçamento", texto: "Oi {nome}! Conseguiu ver o orçamento de {negocio}? Se quiser ajusto quantidades ou prazo." },
-    { id: id(), nome: "Recompra", texto: "Olá {nome}, já está na hora de repor o estoque da {empresa}? Posso separar o pedido de sempre?" },
+    {
+      id: id(),
+      nome: "Primeiro contato",
+      texto:
+        "Olá {nome}, tudo bem? Aqui é da CJK Alimentos. Posso te mandar nossa tabela de preços desta semana?",
+    },
+    {
+      id: id(),
+      nome: "Cobrar orçamento",
+      texto:
+        "Oi {nome}! Conseguiu ver o orçamento de {negocio}? Se quiser ajusto quantidades ou prazo.",
+    },
+    {
+      id: id(),
+      nome: "Recompra",
+      texto:
+        "Olá {nome}, já está na hora de repor o estoque da {empresa}? Posso separar o pedido de sempre?",
+    },
   ];
 }
 
 function vazio() {
-  return { contatos: [], negocios: [], etapas: etapasPadrao(), tarefas: [], historico: [], modelos: modelosPadrao() };
+  return {
+    contatos: [],
+    negocios: [],
+    etapas: etapasPadrao(),
+    tarefas: [],
+    historico: [],
+    modelos: modelosPadrao(),
+  };
 }
 
 let db = carregar();
@@ -40,7 +62,7 @@ function carregar() {
 function salvar() {
   try {
     localStorage.setItem(CHAVE, JSON.stringify(db));
-  } catch (e) {
+  } catch {
     alert("Não consegui salvar neste navegador. Baixe um backup em Ajustes.");
   }
   desenhar();
@@ -51,7 +73,13 @@ function id() {
   return Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
 }
 function esc(t) {
-  return String(t ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  return String(t ?? "").replace(
+    /[&<>"']/g,
+    (c) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
+        c
+      ],
+  );
 }
 function hoje() {
   const d = new Date();
@@ -68,7 +96,10 @@ function dataBR(iso) {
   return `${d}/${m}/${a}`;
 }
 function dinheiro(v) {
-  return (Number(v) || 0).toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  return (Number(v) || 0).toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
 }
 function diasDesde(iso) {
   return Math.floor((Date.now() - new Date(iso).getTime()) / 86400000);
@@ -90,7 +121,13 @@ const negocio = (nid) => db.negocios.find((n) => n.id === nid);
 const etapa = (eid) => db.etapas.find((e) => e.id === eid);
 
 function registrar(contatoId, texto, negocioId) {
-  db.historico.push({ id: id(), contatoId, negocioId: negocioId || null, texto, em: new Date().toISOString() });
+  db.historico.push({
+    id: id(),
+    contatoId,
+    negocioId: negocioId || null,
+    texto,
+    em: new Date().toISOString(),
+  });
 }
 
 // ---------- WhatsApp ----------
@@ -106,10 +143,14 @@ function abrirWhatsApp(contatoId, negocioId) {
   if (!c) return;
   const n = negocioId ? negocio(negocioId) : null;
   if (!telefoneZap(c.telefone)) {
-    alert("Este contato não tem telefone. Edite o contato e coloque o WhatsApp.");
+    alert(
+      "Este contato não tem telefone. Edite o contato e coloque o WhatsApp.",
+    );
     return;
   }
-  const opcoes = db.modelos.map((m) => `<option value="${m.id}">${esc(m.nome)}</option>`).join("");
+  const opcoes = db.modelos
+    .map((m) => `<option value="${m.id}">${esc(m.nome)}</option>`)
+    .join("");
   janela(
     `<h3>WhatsApp para ${esc(c.nome)}</h3>
      <label>Modelo<select name="modelo"><option value="">(mensagem em branco)</option>${opcoes}</select></label>
@@ -122,10 +163,21 @@ function abrirWhatsApp(contatoId, negocioId) {
       const texto = f.get("texto");
       const url = `https://wa.me/${telefoneZap(c.telefone)}${texto ? "?text=" + encodeURIComponent(texto) : ""}`;
       window.open(url, "_blank", "noopener");
-      registrar(c.id, `WhatsApp enviado${texto ? ": " + texto : ""}`, negocioId);
+      registrar(
+        c.id,
+        `WhatsApp enviado${texto ? ": " + texto : ""}`,
+        negocioId,
+      );
       c.ultimoContato = new Date().toISOString();
       if (f.get("prox")) {
-        db.tarefas.push({ id: id(), contatoId: c.id, negocioId: negocioId || null, texto: "Retomar conversa no WhatsApp", quando: somarDias(hoje(), Number(f.get("prox"))), feita: false });
+        db.tarefas.push({
+          id: id(),
+          contatoId: c.id,
+          negocioId: negocioId || null,
+          texto: "Retomar conversa no WhatsApp",
+          quando: somarDias(hoje(), Number(f.get("prox"))),
+          feita: false,
+        });
       }
       salvar();
     },
@@ -164,10 +216,29 @@ dlgForm.addEventListener("submit", (ev) => {
 
 // ---------- Contatos ----------
 function editarContato(cid) {
-  const c = cid ? contato(cid) : { nome: "", telefone: "", empresa: "", cidade: "", etiquetas: [], origem: "WhatsApp", notas: "" };
-  const tarefas = cid ? db.tarefas.filter((t) => t.contatoId === cid).sort((a, b) => a.quando.localeCompare(b.quando)) : [];
+  const c = cid
+    ? contato(cid)
+    : {
+        nome: "",
+        telefone: "",
+        empresa: "",
+        cidade: "",
+        etiquetas: [],
+        origem: "WhatsApp",
+        notas: "",
+      };
+  const tarefas = cid
+    ? db.tarefas
+        .filter((t) => t.contatoId === cid)
+        .sort((a, b) => a.quando.localeCompare(b.quando))
+    : [];
   const negocios = cid ? db.negocios.filter((n) => n.contatoId === cid) : [];
-  const hist = cid ? db.historico.filter((h) => h.contatoId === cid).sort((a, b) => b.em.localeCompare(a.em)).slice(0, 30) : [];
+  const hist = cid
+    ? db.historico
+        .filter((h) => h.contatoId === cid)
+        .sort((a, b) => b.em.localeCompare(a.em))
+        .slice(0, 30)
+    : [];
   janela(
     `<h3>${cid ? esc(c.nome) : "Novo contato"}</h3>
      <label>Nome<input name="nome" required value="${esc(c.nome)}"></label>
@@ -209,11 +280,27 @@ function editarContato(cid) {
         empresa: f.get("empresa").trim(),
         cidade: f.get("cidade").trim(),
         origem: f.get("origem").trim(),
-        etiquetas: f.get("etiquetas").split(",").map((s) => s.trim()).filter(Boolean),
+        etiquetas: f
+          .get("etiquetas")
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean),
         notas: f.get("notas"),
       };
-      const repetido = dados.telefone && db.contatos.find((x) => x.id !== cid && telefoneZap(x.telefone) === telefoneZap(dados.telefone));
-      if (repetido && !confirm(`Já existe "${repetido.nome}" com esse telefone. Salvar mesmo assim?`)) return false;
+      const repetido =
+        dados.telefone &&
+        db.contatos.find(
+          (x) =>
+            x.id !== cid &&
+            telefoneZap(x.telefone) === telefoneZap(dados.telefone),
+        );
+      if (
+        repetido &&
+        !confirm(
+          `Já existe "${repetido.nome}" com esse telefone. Salvar mesmo assim?`,
+        )
+      )
+        return false;
       if (cid) {
         Object.assign(c, dados);
       } else {
@@ -232,7 +319,12 @@ function editarContato(cid) {
           if (acao === "tarefa") novaTarefa(cid);
           if (acao === "negocio") editarNegocio(null, cid);
           if (acao === "nota") novoRegistro(cid);
-          if (acao === "excluir" && confirm(`Excluir ${c.nome} e tudo ligado a ele (negócios, follow-ups, histórico)?`)) {
+          if (
+            acao === "excluir" &&
+            confirm(
+              `Excluir ${c.nome} e tudo ligado a ele (negócios, follow-ups, histórico)?`,
+            )
+          ) {
             db.contatos = db.contatos.filter((x) => x.id !== cid);
             db.negocios = db.negocios.filter((x) => x.contatoId !== cid);
             db.tarefas = db.tarefas.filter((x) => x.contatoId !== cid);
@@ -265,7 +357,14 @@ function novaTarefa(cid, nid) {
      <label>Quando<input type="date" name="quando" required value="${somarDias(hoje(), 1)}"></label>
      <div class="rodape"><button value="cancelar" formnovalidate>Cancelar</button><button class="primario" value="ok">Agendar</button></div>`,
     (f) => {
-      db.tarefas.push({ id: id(), contatoId: cid, negocioId: nid || null, texto: f.get("texto"), quando: f.get("quando"), feita: false });
+      db.tarefas.push({
+        id: id(),
+        contatoId: cid,
+        negocioId: nid || null,
+        texto: f.get("texto"),
+        quando: f.get("quando"),
+        feita: false,
+      });
       salvar();
     },
   );
@@ -277,8 +376,18 @@ function editarNegocio(nid, contatoPadrao) {
     alert("Cadastre um contato primeiro.");
     return editarContato();
   }
-  const n = nid ? negocio(nid) : { titulo: "", valor: "", contatoId: contatoPadrao || "", etapaId: db.etapas[0].id, notas: "" };
-  const contatos = [...db.contatos].sort((a, b) => a.nome.localeCompare(b.nome));
+  const n = nid
+    ? negocio(nid)
+    : {
+        titulo: "",
+        valor: "",
+        contatoId: contatoPadrao || "",
+        etapaId: db.etapas[0].id,
+        notas: "",
+      };
+  const contatos = [...db.contatos].sort((a, b) =>
+    a.nome.localeCompare(b.nome),
+  );
   janela(
     `<h3>${nid ? "Editar negócio" : "Novo negócio"}</h3>
      <label>Título<input name="titulo" required placeholder="Ex.: Pedido semanal de carnes" value="${esc(n.titulo)}"></label>
@@ -293,15 +402,32 @@ function editarNegocio(nid, contatoPadrao) {
        <button value="cancelar" formnovalidate>Fechar</button><button class="primario" value="ok">Salvar</button>
      </div>`,
     (f) => {
-      const valor = Number(String(f.get("valor")).replace(/\./g, "").replace(",", ".")) || 0;
-      const dados = { titulo: f.get("titulo").trim(), contatoId: f.get("contatoId"), valor, notas: f.get("notas") };
+      const valor =
+        Number(String(f.get("valor")).replace(/\./g, "").replace(",", ".")) ||
+        0;
+      const dados = {
+        titulo: f.get("titulo").trim(),
+        contatoId: f.get("contatoId"),
+        valor,
+        notas: f.get("notas"),
+      };
       if (nid) {
         Object.assign(n, dados);
         moverNegocio(n, f.get("etapaId"), false);
       } else {
-        const novo = { id: id(), criadoEm: new Date().toISOString(), atualizadoEm: new Date().toISOString(), etapaId: f.get("etapaId"), ...dados };
+        const novo = {
+          id: id(),
+          criadoEm: new Date().toISOString(),
+          atualizadoEm: new Date().toISOString(),
+          etapaId: f.get("etapaId"),
+          ...dados,
+        };
         db.negocios.push(novo);
-        registrar(novo.contatoId, `Negócio criado: ${novo.titulo} (${dinheiro(valor)})`, novo.id);
+        registrar(
+          novo.contatoId,
+          `Negócio criado: ${novo.titulo} (${dinheiro(valor)})`,
+          novo.id,
+        );
       }
       salvar();
     },
@@ -311,7 +437,9 @@ function editarNegocio(nid, contatoPadrao) {
         b.addEventListener("click", () => {
           if (!confirm("Excluir este negócio?")) return;
           db.negocios = db.negocios.filter((x) => x.id !== nid);
-          db.tarefas.forEach((t) => { if (t.negocioId === nid) t.negocioId = null; });
+          db.tarefas.forEach((t) => {
+            if (t.negocioId === nid) t.negocioId = null;
+          });
           dlg.close();
           salvar();
         });
@@ -354,19 +482,39 @@ function linhaTarefa(t) {
 function desenharHoje() {
   const h = hoje();
   const abertas = db.tarefas.filter((t) => !t.feita);
-  const agora = abertas.filter((t) => t.quando <= h).sort((a, b) => a.quando.localeCompare(b.quando));
-  const prox = abertas.filter((t) => t.quando > h && t.quando <= somarDias(h, 7)).sort((a, b) => a.quando.localeCompare(b.quando));
-  document.getElementById("lista-hoje").innerHTML = agora.map(linhaTarefa).join("") || '<li class="vazio">Nada pendente. 🎉</li>';
-  document.getElementById("lista-proximos").innerHTML = prox.map(linhaTarefa).join("") || '<li class="vazio">Nada agendado para a semana.</li>';
+  const agora = abertas
+    .filter((t) => t.quando <= h)
+    .sort((a, b) => a.quando.localeCompare(b.quando));
+  const prox = abertas
+    .filter((t) => t.quando > h && t.quando <= somarDias(h, 7))
+    .sort((a, b) => a.quando.localeCompare(b.quando));
+  document.getElementById("lista-hoje").innerHTML =
+    agora.map(linhaTarefa).join("") ||
+    '<li class="vazio">Nada pendente. 🎉</li>';
+  document.getElementById("lista-proximos").innerHTML =
+    prox.map(linhaTarefa).join("") ||
+    '<li class="vazio">Nada agendado para a semana.</li>';
 
-  const abertos = db.negocios.filter((n) => etapa(n.etapaId)?.tipo === "aberta");
+  const abertos = db.negocios.filter(
+    (n) => etapa(n.etapaId)?.tipo === "aberta",
+  );
   const mes = h.slice(0, 7);
-  const ganhos = db.negocios.filter((n) => etapa(n.etapaId)?.tipo === "ganho" && (n.fechadoEm || "").slice(0, 7) === mes);
+  const ganhos = db.negocios.filter(
+    (n) =>
+      etapa(n.etapaId)?.tipo === "ganho" &&
+      (n.fechadoEm || "").slice(0, 7) === mes,
+  );
   const parados = abertos.filter((n) => diasDesde(n.atualizadoEm) >= 7);
   const atrasadas = abertas.filter((t) => t.quando < h);
   document.getElementById("resumo").innerHTML = [
-    [dinheiro(abertos.reduce((s, n) => s + n.valor, 0)), `em ${abertos.length} negócios abertos`],
-    [dinheiro(ganhos.reduce((s, n) => s + n.valor, 0)), `fechado este mês (${ganhos.length})`],
+    [
+      dinheiro(abertos.reduce((s, n) => s + n.valor, 0)),
+      `em ${abertos.length} negócios abertos`,
+    ],
+    [
+      dinheiro(ganhos.reduce((s, n) => s + n.valor, 0)),
+      `fechado este mês (${ganhos.length})`,
+    ],
     [atrasadas.length, "follow-ups atrasados"],
     [parados.length, "negócios parados há 7+ dias"],
     [db.contatos.length, "contatos"],
@@ -376,7 +524,10 @@ function desenharHoje() {
 }
 
 function desenharFunil() {
-  const busca = document.getElementById("busca-funil").value.trim().toLowerCase();
+  const busca = document
+    .getElementById("busca-funil")
+    .value.trim()
+    .toLowerCase();
   const kb = document.getElementById("kanban");
   kb.innerHTML = db.etapas
     .map((e, i) => {
@@ -384,7 +535,10 @@ function desenharFunil() {
         if (n.etapaId !== e.id) return false;
         if (!busca) return true;
         const c = contato(n.contatoId);
-        return [n.titulo, c?.nome, c?.empresa].join(" ").toLowerCase().includes(busca);
+        return [n.titulo, c?.nome, c?.empresa]
+          .join(" ")
+          .toLowerCase()
+          .includes(busca);
       });
       const total = lista.reduce((s, n) => s + n.valor, 0);
       return `<div class="coluna" data-etapa="${e.id}" style="--cor:${esc(e.cor)}">
@@ -412,9 +566,26 @@ function desenharFunil() {
 }
 
 function desenharContatos() {
-  const busca = document.getElementById("busca-contatos").value.trim().toLowerCase();
+  const busca = document
+    .getElementById("busca-contatos")
+    .value.trim()
+    .toLowerCase();
   const lista = db.contatos
-    .filter((c) => !busca || [c.nome, c.telefone, telefoneZap(c.telefone), c.empresa, c.cidade, (c.etiquetas || []).join(" ")].join(" ").toLowerCase().includes(busca))
+    .filter(
+      (c) =>
+        !busca ||
+        [
+          c.nome,
+          c.telefone,
+          telefoneZap(c.telefone),
+          c.empresa,
+          c.cidade,
+          (c.etiquetas || []).join(" "),
+        ]
+          .join(" ")
+          .toLowerCase()
+          .includes(busca),
+    )
     .sort((a, b) => a.nome.localeCompare(b.nome));
   document.getElementById("tabela-contatos").innerHTML =
     lista
@@ -428,17 +599,24 @@ function desenharContatos() {
       <td><button class="zap mini" data-zap="${c.id}">WhatsApp</button> <button class="mini" data-tarefa="${c.id}">+ Follow-up</button></td>
     </tr>`,
       )
-      .join("") || `<tr><td colspan="6" class="vazio">${busca ? "Nada encontrado." : "Nenhum contato ainda. Clique em + Contato ou carregue o exemplo em Ajustes."}</td></tr>`;
+      .join("") ||
+    `<tr><td colspan="6" class="vazio">${busca ? "Nada encontrado." : "Nenhum contato ainda. Clique em + Contato ou carregue o exemplo em Ajustes."}</td></tr>`;
 }
 
 function desenharModelos() {
   document.getElementById("lista-modelos").innerHTML =
-    db.modelos.map((m) => `<li><div class="cresce"><b>${esc(m.nome)}</b><br><small>${esc(m.texto)}</small></div><button class="mini" data-modelo="${m.id}">Editar</button></li>`).join("") ||
-    '<li class="vazio">Nenhum modelo.</li>';
+    db.modelos
+      .map(
+        (m) =>
+          `<li><div class="cresce"><b>${esc(m.nome)}</b><br><small>${esc(m.texto)}</small></div><button class="mini" data-modelo="${m.id}">Editar</button></li>`,
+      )
+      .join("") || '<li class="vazio">Nenhum modelo.</li>';
 }
 
 function editarModelo(mid) {
-  const m = mid ? db.modelos.find((x) => x.id === mid) : { nome: "", texto: "" };
+  const m = mid
+    ? db.modelos.find((x) => x.id === mid)
+    : { nome: "", texto: "" };
   janela(
     `<h3>${mid ? "Editar modelo" : "Novo modelo"}</h3>
      <label>Nome<input name="nome" required value="${esc(m.nome)}"></label>
@@ -449,7 +627,12 @@ function editarModelo(mid) {
      </div>`,
     (f) => {
       if (mid) Object.assign(m, { nome: f.get("nome"), texto: f.get("texto") });
-      else db.modelos.push({ id: id(), nome: f.get("nome"), texto: f.get("texto") });
+      else
+        db.modelos.push({
+          id: id(),
+          nome: f.get("nome"),
+          texto: f.get("texto"),
+        });
       salvar();
     },
     (form) => {
@@ -487,13 +670,23 @@ function desenharEtapas() {
 document.getElementById("abas").addEventListener("click", (ev) => {
   const b = ev.target.closest("button[data-aba]");
   if (!b) return;
-  document.querySelectorAll("#abas button").forEach((x) => x.classList.toggle("ativa", x === b));
-  document.querySelectorAll(".aba").forEach((s) => s.classList.toggle("ativa", s.id === "aba-" + b.dataset.aba));
-  try { localStorage.setItem(CHAVE + "-aba", b.dataset.aba); } catch (e) {}
+  document
+    .querySelectorAll("#abas button")
+    .forEach((x) => x.classList.toggle("ativa", x === b));
+  document
+    .querySelectorAll(".aba")
+    .forEach((s) =>
+      s.classList.toggle("ativa", s.id === "aba-" + b.dataset.aba),
+    );
+  try {
+    localStorage.setItem(CHAVE + "-aba", b.dataset.aba);
+  } catch {}
 });
 
 document.addEventListener("click", (ev) => {
-  const t = ev.target.closest("[data-zap],[data-feita],[data-adiar],[data-contato],[data-tarefa],[data-mover],[data-modelo],[data-subir],[data-descer],[data-tirar-etapa],.cartao");
+  const t = ev.target.closest(
+    "[data-zap],[data-feita],[data-adiar],[data-contato],[data-tarefa],[data-mover],[data-modelo],[data-subir],[data-descer],[data-tirar-etapa],.cartao",
+  );
   if (!t || dlg.contains(t)) return;
   const d = t.dataset;
   if (d.zap) return abrirWhatsApp(d.zap, d.neg || null);
@@ -522,9 +715,13 @@ document.addEventListener("click", (ev) => {
     return salvar();
   }
   if (d.tirarEtapa) {
-    if (db.etapas.length === 1) return alert("O funil precisa de pelo menos uma etapa.");
+    if (db.etapas.length === 1)
+      return alert("O funil precisa de pelo menos uma etapa.");
     const qtd = db.negocios.filter((n) => n.etapaId === d.tirarEtapa).length;
-    if (qtd) return alert(`Essa etapa tem ${qtd} negócio(s). Mova-os antes de excluir.`);
+    if (qtd)
+      return alert(
+        `Essa etapa tem ${qtd} negócio(s). Mova-os antes de excluir.`,
+      );
     db.etapas = db.etapas.filter((e) => e.id !== d.tirarEtapa);
     return salvar();
   }
@@ -551,7 +748,9 @@ kanban.addEventListener("dragover", (ev) => {
   const col = ev.target.closest(".coluna");
   if (!col) return;
   ev.preventDefault();
-  kanban.querySelectorAll(".alvo").forEach((x) => x !== col && x.classList.remove("alvo"));
+  kanban
+    .querySelectorAll(".alvo")
+    .forEach((x) => x !== col && x.classList.remove("alvo"));
   col.classList.add("alvo");
 });
 kanban.addEventListener("drop", (ev) => {
@@ -562,15 +761,29 @@ kanban.addEventListener("drop", (ev) => {
   if (n) moverNegocio(n, col.dataset.etapa);
   else desenharFunil();
 });
-kanban.addEventListener("dragend", () => kanban.querySelectorAll(".alvo").forEach((x) => x.classList.remove("alvo")));
+kanban.addEventListener("dragend", () =>
+  kanban.querySelectorAll(".alvo").forEach((x) => x.classList.remove("alvo")),
+);
 
 document.getElementById("busca-funil").addEventListener("input", desenharFunil);
-document.getElementById("busca-contatos").addEventListener("input", desenharContatos);
-document.getElementById("novo-negocio").addEventListener("click", () => editarNegocio());
-document.getElementById("novo-contato").addEventListener("click", () => editarContato());
-document.getElementById("novo-modelo").addEventListener("click", () => editarModelo());
+document
+  .getElementById("busca-contatos")
+  .addEventListener("input", desenharContatos);
+document
+  .getElementById("novo-negocio")
+  .addEventListener("click", () => editarNegocio());
+document
+  .getElementById("novo-contato")
+  .addEventListener("click", () => editarContato());
+document
+  .getElementById("novo-modelo")
+  .addEventListener("click", () => editarModelo());
 document.getElementById("nova-etapa").addEventListener("click", () => {
-  db.etapas.splice(Math.max(db.etapas.findLastIndex((e) => e.tipo === "aberta") + 1, 0), 0, { id: id(), nome: "Nova etapa", cor: "#64748b", tipo: "aberta" });
+  db.etapas.splice(
+    Math.max(db.etapas.findLastIndex((e) => e.tipo === "aberta") + 1, 0),
+    0,
+    { id: id(), nome: "Nova etapa", cor: "#64748b", tipo: "aberta" },
+  );
   salvar();
 });
 
@@ -583,18 +796,30 @@ function baixar(nome, conteudo, tipo) {
   setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 }
 
-document.getElementById("exportar").addEventListener("click", () => baixar(`crm-backup-${hoje()}.json`, JSON.stringify(db, null, 2), "application/json"));
+document
+  .getElementById("exportar")
+  .addEventListener("click", () =>
+    baixar(
+      `crm-backup-${hoje()}.json`,
+      JSON.stringify(db, null, 2),
+      "application/json",
+    ),
+  );
 document.getElementById("importar").addEventListener("change", async (ev) => {
   const arq = ev.target.files[0];
   ev.target.value = "";
   if (!arq) return;
   try {
     const dados = JSON.parse(await arq.text());
-    if (!Array.isArray(dados.contatos) || !Array.isArray(dados.etapas)) throw new Error("formato");
-    if (!confirm("Isso troca todos os dados atuais pelos do backup. Continuar?")) return;
+    if (!Array.isArray(dados.contatos) || !Array.isArray(dados.etapas))
+      throw new Error("formato");
+    if (
+      !confirm("Isso troca todos os dados atuais pelos do backup. Continuar?")
+    )
+      return;
     db = Object.assign(vazio(), dados);
     salvar();
-  } catch (e) {
+  } catch {
     alert("Esse arquivo não parece um backup deste CRM.");
   }
 });
@@ -604,98 +829,258 @@ function csvCampo(v) {
   return /[";\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
 }
 document.getElementById("exportar-csv").addEventListener("click", () => {
-  const linhas = [["nome", "telefone", "empresa", "cidade", "origem", "etiquetas", "notas"]];
-  db.contatos.forEach((c) => linhas.push([c.nome, c.telefone, c.empresa, c.cidade, c.origem, (c.etiquetas || []).join(", "), c.notas]));
+  const linhas = [
+    ["nome", "telefone", "empresa", "cidade", "origem", "etiquetas", "notas"],
+  ];
+  db.contatos.forEach((c) =>
+    linhas.push([
+      c.nome,
+      c.telefone,
+      c.empresa,
+      c.cidade,
+      c.origem,
+      (c.etiquetas || []).join(", "),
+      c.notas,
+    ]),
+  );
   // ";" e BOM para o Excel brasileiro abrir certinho
-  baixar(`contatos-${hoje()}.csv`, "﻿" + linhas.map((l) => l.map(csvCampo).join(";")).join("\n"), "text/csv");
+  baixar(
+    `contatos-${hoje()}.csv`,
+    "﻿" + linhas.map((l) => l.map(csvCampo).join(";")).join("\n"),
+    "text/csv",
+  );
 });
 
 function lerCSV(texto) {
   texto = texto.replace(/^﻿/, "");
   const primeira = texto.split(/\r?\n/)[0];
-  const sep = (primeira.match(/;/g) || []).length >= (primeira.match(/,/g) || []).length ? ";" : ",";
+  const sep =
+    (primeira.match(/;/g) || []).length >= (primeira.match(/,/g) || []).length
+      ? ";"
+      : ",";
   const linhas = [];
-  let linha = [], campo = "", aspas = false;
+  let linha = [],
+    campo = "",
+    aspas = false;
   for (let i = 0; i < texto.length; i++) {
     const ch = texto[i];
     if (aspas) {
-      if (ch === '"' && texto[i + 1] === '"') { campo += '"'; i++; }
-      else if (ch === '"') aspas = false;
+      if (ch === '"' && texto[i + 1] === '"') {
+        campo += '"';
+        i++;
+      } else if (ch === '"') aspas = false;
       else campo += ch;
     } else if (ch === '"') aspas = true;
-    else if (ch === sep) { linha.push(campo); campo = ""; }
-    else if (ch === "\n" || ch === "\r") {
+    else if (ch === sep) {
+      linha.push(campo);
+      campo = "";
+    } else if (ch === "\n" || ch === "\r") {
       if (ch === "\r" && texto[i + 1] === "\n") i++;
-      linha.push(campo); linhas.push(linha); linha = []; campo = "";
+      linha.push(campo);
+      linhas.push(linha);
+      linha = [];
+      campo = "";
     } else campo += ch;
   }
-  if (campo || linha.length) { linha.push(campo); linhas.push(linha); }
+  if (campo || linha.length) {
+    linha.push(campo);
+    linhas.push(linha);
+  }
   return linhas.filter((l) => l.some((c) => c.trim()));
 }
 
-document.getElementById("importar-csv").addEventListener("change", async (ev) => {
-  const arq = ev.target.files[0];
-  ev.target.value = "";
-  if (!arq) return;
-  const linhas = lerCSV(await arq.text());
-  if (linhas.length < 2) return alert("O arquivo está vazio.");
-  const cab = linhas[0].map((h) => h.trim().toLowerCase());
-  const col = (...nomes) => cab.findIndex((h) => nomes.includes(h));
-  const iNome = col("nome", "name", "cliente");
-  const iTel = col("telefone", "whatsapp", "celular", "phone", "fone");
-  if (iNome < 0) return alert('Preciso de uma coluna chamada "nome" na primeira linha.');
-  const iEmp = col("empresa", "company"), iCid = col("cidade", "city"), iOri = col("origem"), iEtq = col("etiquetas", "tags"), iNot = col("notas", "observações", "obs");
-  const pega = (l, i) => (i >= 0 ? (l[i] || "").trim() : "");
-  let novos = 0, repetidos = 0;
-  const vistos = new Set(db.contatos.map((c) => telefoneZap(c.telefone)).filter(Boolean));
-  for (const l of linhas.slice(1)) {
-    const nome = pega(l, iNome);
-    if (!nome) continue;
-    const tel = pega(l, iTel);
-    if (tel && vistos.has(telefoneZap(tel))) { repetidos++; continue; }
-    if (tel) vistos.add(telefoneZap(tel));
-    const c = { id: id(), criadoEm: new Date().toISOString(), nome, telefone: tel, empresa: pega(l, iEmp), cidade: pega(l, iCid), origem: pega(l, iOri) || "Importado", etiquetas: pega(l, iEtq).split(",").map((s) => s.trim()).filter(Boolean), notas: pega(l, iNot) };
-    db.contatos.push(c);
-    registrar(c.id, "Contato importado de planilha");
-    novos++;
-  }
-  salvar();
-  alert(`${novos} contato(s) importado(s).${repetidos ? ` ${repetidos} ignorado(s) por telefone repetido.` : ""}`);
-});
+document
+  .getElementById("importar-csv")
+  .addEventListener("change", async (ev) => {
+    const arq = ev.target.files[0];
+    ev.target.value = "";
+    if (!arq) return;
+    const linhas = lerCSV(await arq.text());
+    if (linhas.length < 2) return alert("O arquivo está vazio.");
+    const cab = linhas[0].map((h) => h.trim().toLowerCase());
+    const col = (...nomes) => cab.findIndex((h) => nomes.includes(h));
+    const iNome = col("nome", "name", "cliente");
+    const iTel = col("telefone", "whatsapp", "celular", "phone", "fone");
+    if (iNome < 0)
+      return alert('Preciso de uma coluna chamada "nome" na primeira linha.');
+    const iEmp = col("empresa", "company"),
+      iCid = col("cidade", "city"),
+      iOri = col("origem"),
+      iEtq = col("etiquetas", "tags"),
+      iNot = col("notas", "observações", "obs");
+    const pega = (l, i) => (i >= 0 ? (l[i] || "").trim() : "");
+    let novos = 0,
+      repetidos = 0;
+    const vistos = new Set(
+      db.contatos.map((c) => telefoneZap(c.telefone)).filter(Boolean),
+    );
+    for (const l of linhas.slice(1)) {
+      const nome = pega(l, iNome);
+      if (!nome) continue;
+      const tel = pega(l, iTel);
+      if (tel && vistos.has(telefoneZap(tel))) {
+        repetidos++;
+        continue;
+      }
+      if (tel) vistos.add(telefoneZap(tel));
+      const c = {
+        id: id(),
+        criadoEm: new Date().toISOString(),
+        nome,
+        telefone: tel,
+        empresa: pega(l, iEmp),
+        cidade: pega(l, iCid),
+        origem: pega(l, iOri) || "Importado",
+        etiquetas: pega(l, iEtq)
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean),
+        notas: pega(l, iNot),
+      };
+      db.contatos.push(c);
+      registrar(c.id, "Contato importado de planilha");
+      novos++;
+    }
+    salvar();
+    alert(
+      `${novos} contato(s) importado(s).${repetidos ? ` ${repetidos} ignorado(s) por telefone repetido.` : ""}`,
+    );
+  });
 
 document.getElementById("demo").addEventListener("click", () => {
-  if (db.contatos.length && !confirm("Isso troca os dados atuais por um exemplo. Continuar?")) return;
+  if (
+    db.contatos.length &&
+    !confirm("Isso troca os dados atuais por um exemplo. Continuar?")
+  )
+    return;
   db = vazio();
   const [novo, orc, neg, ganho] = db.etapas;
   const pessoas = [
-    ["Marcos Silva", "11987654321", "Restaurante Sabor Caseiro", "São Paulo", ["restaurante"]],
-    ["Ana Souza", "11912345678", "Mercadinho da Ana", "Guarulhos", ["mercado", "varejo"]],
-    ["João Pereira", "11955554444", "Lanchonete Ponto Certo", "Osasco", ["lanchonete"]],
-    ["Carla Mendes", "11933332222", "Buffet Festa Boa", "Santo André", ["buffet", "eventos"]],
+    [
+      "Marcos Silva",
+      "11987654321",
+      "Restaurante Sabor Caseiro",
+      "São Paulo",
+      ["restaurante"],
+    ],
+    [
+      "Ana Souza",
+      "11912345678",
+      "Mercadinho da Ana",
+      "Guarulhos",
+      ["mercado", "varejo"],
+    ],
+    [
+      "João Pereira",
+      "11955554444",
+      "Lanchonete Ponto Certo",
+      "Osasco",
+      ["lanchonete"],
+    ],
+    [
+      "Carla Mendes",
+      "11933332222",
+      "Buffet Festa Boa",
+      "Santo André",
+      ["buffet", "eventos"],
+    ],
   ];
   pessoas.forEach(([nome, telefone, empresa, cidade, etiquetas]) => {
-    db.contatos.push({ id: id(), criadoEm: new Date().toISOString(), nome, telefone, empresa, cidade, etiquetas, origem: "WhatsApp", notas: "" });
+    db.contatos.push({
+      id: id(),
+      criadoEm: new Date().toISOString(),
+      nome,
+      telefone,
+      empresa,
+      cidade,
+      etiquetas,
+      origem: "WhatsApp",
+      notas: "",
+    });
   });
   const [c1, c2, c3, c4] = db.contatos;
   const velho = new Date(Date.now() - 10 * 86400000).toISOString();
   const agora = new Date().toISOString();
   db.negocios.push(
-    { id: id(), contatoId: c1.id, titulo: "Pedido semanal de carnes", valor: 2400, etapaId: neg.id, criadoEm: velho, atualizadoEm: velho, notas: "" },
-    { id: id(), contatoId: c2.id, titulo: "Reposição de frios", valor: 850, etapaId: orc.id, criadoEm: agora, atualizadoEm: agora, notas: "" },
-    { id: id(), contatoId: c3.id, titulo: "Primeiro pedido", valor: 600, etapaId: novo.id, criadoEm: agora, atualizadoEm: agora, notas: "" },
-    { id: id(), contatoId: c4.id, titulo: "Festa de fim de ano", valor: 5200, etapaId: ganho.id, criadoEm: velho, atualizadoEm: agora, fechadoEm: agora, notas: "" },
+    {
+      id: id(),
+      contatoId: c1.id,
+      titulo: "Pedido semanal de carnes",
+      valor: 2400,
+      etapaId: neg.id,
+      criadoEm: velho,
+      atualizadoEm: velho,
+      notas: "",
+    },
+    {
+      id: id(),
+      contatoId: c2.id,
+      titulo: "Reposição de frios",
+      valor: 850,
+      etapaId: orc.id,
+      criadoEm: agora,
+      atualizadoEm: agora,
+      notas: "",
+    },
+    {
+      id: id(),
+      contatoId: c3.id,
+      titulo: "Primeiro pedido",
+      valor: 600,
+      etapaId: novo.id,
+      criadoEm: agora,
+      atualizadoEm: agora,
+      notas: "",
+    },
+    {
+      id: id(),
+      contatoId: c4.id,
+      titulo: "Festa de fim de ano",
+      valor: 5200,
+      etapaId: ganho.id,
+      criadoEm: velho,
+      atualizadoEm: agora,
+      fechadoEm: agora,
+      notas: "",
+    },
   );
   db.tarefas.push(
-    { id: id(), contatoId: c1.id, negocioId: db.negocios[0].id, texto: "Cobrar resposta do orçamento", quando: somarDias(hoje(), -2), feita: false },
-    { id: id(), contatoId: c2.id, negocioId: db.negocios[1].id, texto: "Confirmar quantidades", quando: hoje(), feita: false },
-    { id: id(), contatoId: c3.id, negocioId: null, texto: "Mandar tabela de preços", quando: somarDias(hoje(), 3), feita: false },
+    {
+      id: id(),
+      contatoId: c1.id,
+      negocioId: db.negocios[0].id,
+      texto: "Cobrar resposta do orçamento",
+      quando: somarDias(hoje(), -2),
+      feita: false,
+    },
+    {
+      id: id(),
+      contatoId: c2.id,
+      negocioId: db.negocios[1].id,
+      texto: "Confirmar quantidades",
+      quando: hoje(),
+      feita: false,
+    },
+    {
+      id: id(),
+      contatoId: c3.id,
+      negocioId: null,
+      texto: "Mandar tabela de preços",
+      quando: somarDias(hoje(), 3),
+      feita: false,
+    },
   );
   db.contatos.forEach((c) => registrar(c.id, "Contato criado (exemplo)"));
   salvar();
 });
 
 document.getElementById("apagar").addEventListener("click", () => {
-  if (!confirm("Apagar TODOS os dados deste CRM? Baixe um backup antes se quiser guardar.")) return;
+  if (
+    !confirm(
+      "Apagar TODOS os dados deste CRM? Baixe um backup antes se quiser guardar.",
+    )
+  )
+    return;
   if (!confirm("Tem certeza? Não dá para desfazer.")) return;
   db = vazio();
   salvar();
@@ -705,5 +1090,5 @@ document.getElementById("apagar").addEventListener("click", () => {
 try {
   const aba = localStorage.getItem(CHAVE + "-aba");
   if (aba) document.querySelector(`#abas button[data-aba="${aba}"]`)?.click();
-} catch (e) {}
+} catch {}
 desenhar();
