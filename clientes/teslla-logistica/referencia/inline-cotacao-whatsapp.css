@@ -1,0 +1,210 @@
+/* BOTÃO PADRÃO ESTILO CTA */
+.cta-cotacao {
+  background: #1d72b8;
+  color: #fff;
+  border: none;
+  padding: 16px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cta-cotacao:hover {
+  background: #155a96;
+  transform: translateY(-2px);
+}
+
+/* BOTÃO DESKTOP */
+.btn-cotacao-desktop {
+  position: fixed;
+  z-index: 9999;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  right: auto;
+  bottom: 10px;
+	
+}
+@media (min-width: 1400px) {
+  .btn-cotacao-desktop {
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    bottom: 10px;
+  }
+}
+
+/* BOTÃO MOBILE */
+.btn-cotacao-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: none;
+}
+.btn-cotacao-mobile button {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+/* MODAL */
+.modal-cotacao {
+  display: none;
+  position: fixed;
+  z-index: 99999999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+.modal-cotacao .modal-content {
+  background-color: #fff;
+  margin: 8% auto;
+  padding: 30px 50px;
+  max-width: 900px;
+  width: 90%;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+}
+.modal-cotacao .fechar-modal {
+  color: #333;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ESTILO DOS CAMPOS DO FORMULÁRIO */
+#modal-cotacao .wpcf7-form-control-wrap{
+  margin: 0;
+}
+
+#modal-cotacao .wpcf7 input[type="text"],
+#modal-cotacao .wpcf7 input[type="email"],
+#modal-cotacao .wpcf7 input[type="tel"],
+#modal-cotacao .wpcf7 input[type="url"],
+#modal-cotacao .wpcf7 input[type="number"],
+#modal-cotacao .wpcf7 input[type="date"],
+#modal-cotacao .wpcf7 input[type="password"],
+#modal-cotacao .wpcf7 textarea {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#modal-cotacao .wpcf7 textarea {
+  max-height: 130px;
+}
+#modal-cotacao .wpcf7 input:focus,
+#modal-cotacao .wpcf7 textarea:focus {
+  border-color: #1d72b8;
+  box-shadow: 0 0 0 2px rgba(29, 114, 184, 0.2);
+  outline: none;
+}
+#modal-cotacao .wpcf7 ::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* CAPTCHA IMG e INPUT */
+#modal-cotacao .wpcf7-captchac {
+  margin-bottom: 10px;
+  display: block;
+}
+#modal-cotacao .wpcf7-captchar {
+  width: 100%;
+}
+
+/* BOTÃO DE ENVIO */
+#modal-cotacao .wpcf7 .wpcf7-submit,
+#modal-cotacao .wpcf7 .btn-default {
+  display: block;
+  margin: 30px auto 0 auto;
+  background: #0e843a;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 17px;
+  width: 100%;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+#modal-cotacao .wpcf7 .wpcf7-submit:hover,
+#modal-cotacao .wpcf7 .btn-default:hover {
+  background: #155a96;
+  transform: translateY(-2px);
+}
+
+/* REMOVE MARGIN EM <P> QUE ENVOLVEM OS INPUTS */
+#modal-cotacao .wpcf7-form > p {
+  margin: 0;
+}
+
+/* RESPONSIVO */
+@media (min-width: 768px) {
+  .btn-cotacao-desktop { display: block; }
+}
+@media (max-width: 767px) {
+  .modal-cotacao .modal-content{
+    margin: 0;
+    padding: 60px 20px;
+    max-width: 100vh;
+    width: 100%;
+    border-radius: 0;
+    min-height: 100vh;
+    justify-content: center;
+    overflow: auto;
+  }
+  #btn_chat_whatsapp {
+    bottom: 100px !important;
+    right: 10px !important;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-4px); }
+  40% { transform: translateX(4px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+  100% { transform: translateX(0); }
+}
+
+/* Aplica animação só no DESKTOP */
+@media (min-width: 768px) {
+  .btn-cotacao-desktop.shake {
+    animation: shake 0.4s ease-in-out;
+  }
+}
+
+/* NÃO aplica no mobile */
+@media (max-width: 767px) {
+  .btn-cotacao-mobile {
+    animation: none !important;
+  }
+  .btn-cotacao-desktop {
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    width: calc(100% - 20px);
+  }
+  .btn-cotacao-desktop .cta-cotacao{
+    width: 100%;
+  }
+}

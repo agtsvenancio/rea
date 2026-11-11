@@ -1,6 +1,6 @@
 # 05. Conteúdo por página
 
-Headings, botões e links são literais. Parágrafos e respostas de FAQ são **resumos**.
+Resumo por página. **Para o texto literal completo, use [conteudo/](conteudo/)** (um arquivo por URL).
 Todas as páginas têm `<title>` no formato `<Título da página> - Teslla` e nenhuma tem `meta description` (ver 07).
 
 ## Home

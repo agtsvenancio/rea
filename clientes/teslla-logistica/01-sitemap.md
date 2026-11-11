@@ -1,6 +1,6 @@
 # 01. Sitemap
 
-Base: `https://tesllalogistica.com.br`. Fonte: menus do site + API REST (`/wp-json/wp/v2/pages`, `/posts`, `/solucoes`).
+Base: `https://tesllalogistica.com.br`. Fonte: sitemap oficial (`/wp-sitemap.xml`, sitemap nativo do WordPress) + API REST. **A lista abaixo bate 100% com o sitemap: são 27 URLs indexáveis** (8 páginas, 15 soluções, 4 posts) + `/category/noticias/` e `/tag/noticias/`.
 
 ## Árvore
 
@@ -31,7 +31,7 @@ Base: `https://tesllalogistica.com.br`. Fonte: menus do site + API REST (`/wp-js
 └── /sample-page/                   Sample Page (page 2), lixo da instalação, remover
 ```
 
-URLs auxiliares: `/category/noticias/` (arquivo da categoria), `/archive-solucoes/` (usado no breadcrumb, deveria ser `/solucoes/`).
+URLs auxiliares: `/category/noticias/`, `/tag/noticias/` (tag com o mesmo nome da categoria), `/archive-solucoes/` (usado no breadcrumb, deveria ser `/solucoes/`).
 
 ## Páginas (post type `page`)
 

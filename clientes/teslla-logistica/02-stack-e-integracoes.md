@@ -6,8 +6,9 @@
 |---|---|---|
 | CMS | WordPress (block editor ativo) | `/wp-json/`, caminhos `/wp-content/uploads/` |
 | Hospedagem | Hostinger | plugins `hostinger-easy-onboarding`, `hostinger-tools-plugin`, `hostinger-amplitude`; domínio de staging `blanchedalmond-stinkbug-185073.hostingersite.com` |
-| Tema | Custom (nome não identificado) | template `archive-solucoes.php`, assets em `/assets/img/shapes/...`; estrutura típica de template HTML de logística comprado e convertido |
-| Page builder | Nenhum detectado (sem Elementor/Wix) | sem marcadores no HTML renderizado |
+| Tema | `tema` ("BLOG SEO" v1.1, autora Taciara Furtado, taciara.com.br) sobre template HTML de logística (prefixo `lt-`) + Bootstrap 5.3 | `/wp-content/themes/tema/style.css` |
+| Page builder | Nenhum (templates PHP) | HTML do tema |
+| Front-end | jQuery 3.7.1, Bootstrap 5.3.0, Swiper 6.8, WOW.js, Isotope, MeanMenu, VenoBox, Lightbox2, Font Awesome 6.4.2, VLibras | scripts da home |
 | Front page | Página estática "Home" (id 9); posts em "Blog" (id 16) | `show_on_front: page` |
 | Fuso | `gmt_offset: 0`, timezone vazio | deveria ser America/Sao_Paulo |
 
@@ -76,7 +77,7 @@ Página: H2 "Faça sua Cotação com a gente!". Obrigatoriedade dos campos não 
 Select de UF: "Selecione" + AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO. Mais captcha.
 
 ### C. "Solicite um Atendimento" (Home)
-Só o captcha ficou visível na leitura; campos não identificados. **Conferir no painel do CF7.**
+Campos: Nome completo, Seu e-mail, Telefone (lado a lado), captcha, botão "Solicitar Atendimento" (largura total, vermelho).
 
 ## Para extrair 100% na migração (acesso ao painel)
 
@@ -84,4 +85,4 @@ Só o captcha ficou visível na leitura; campos não identificados. **Conferir n
 2. Ferramentas → Exportar (XML) para posts, páginas e `solucoes`.
 3. Contact Form 7: copiar a configuração de cada formulário (campos, e-mail de destino, redirecionamentos).
 4. GTM: exportar os dois containers.
-5. Baixar `/wp-content/themes/<tema>/` para ter CSS, fontes e ícones originais.
+5. Baixar `/wp-content/themes/tema/` inteiro (o CSS principal já está em `referencia/`).

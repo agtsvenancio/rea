@@ -1,0 +1,80 @@
+/*
+ * Teslla Logística: design tokens extraídos de tesllalogistica.com.br (nov/2026).
+ * Valores literais do tema atual. Ver 06-design-system.md.
+ */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  /* Cores */
+  --tl-color-primary: #cc1111;
+  --tl-color-dark: #0f1b24;        /* títulos e seções escuras */
+  --tl-color-text: #757575;
+  --tl-color-bg: #ffffff;
+  --tl-color-bg-alt: #f9f9f9;
+  --tl-color-border: #dddddd;
+  --tl-color-border-soft: rgba(15, 27, 36, 0.1);
+  --tl-color-input-border: #dee2e6;
+  --tl-color-whatsapp: #25d366;
+
+  /* Tipografia */
+  --tl-font-heading: "DM Sans", sans-serif;
+  --tl-font-body: "Poppins", sans-serif;
+  --tl-font-nav: "Roboto", sans-serif;
+  --tl-fs-body: 16px;
+  --tl-lh-body: 25px;
+  --tl-fs-h1: 80px;   /* cabeçalho de página */
+  --tl-fs-h2: 38px;   /* título de seção */
+  --tl-fs-h2-cta: 48px;
+  --tl-fs-h3: 20px;
+  --tl-fs-eyebrow: 18px;
+
+  /* Layout */
+  --tl-container: 1170px;
+  --tl-section-py: 120px;
+  --tl-header-h: 85px;
+  --tl-topbar-h: 42px;
+
+  /* Componentes */
+  --tl-btn-pad: 12px 30px;
+  --tl-btn-radius: 0;
+  --tl-input-radius: 6px;
+  --tl-card-radius: 6px;
+  --tl-shadow-card: 0 3px 15px rgba(15, 27, 36, 0.1);
+  --tl-shadow-quote: 0 16px 40px rgba(15, 27, 36, 0.1);
+  --tl-ease: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@media (max-width: 991px) {
+  :root { --tl-section-py: 70px; --tl-fs-h1: 56px; }
+}
+@media (max-width: 767px) {
+  :root { --tl-section-py: 50px; --tl-fs-h1: 40px; --tl-fs-h2: 32px; --tl-fs-eyebrow: 16px; }
+}
+
+/* Base */
+body { font-family: var(--tl-font-body); font-size: var(--tl-fs-body); line-height: var(--tl-lh-body); color: var(--tl-color-text); background: var(--tl-color-bg); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--tl-font-heading); color: var(--tl-color-dark); }
+.tl-container { max-width: var(--tl-container); margin-inline: auto; padding-inline: 15px; }
+.tl-section { padding-block: var(--tl-section-py); }
+.tl-section--dark { background: var(--tl-color-dark); color: #fff; }
+.tl-section--dark h2, .tl-section--dark h3 { color: #fff; }
+.tl-section--alt { background: var(--tl-color-bg-alt); }
+
+/* Título de seção: eyebrow + título */
+.tl-eyebrow { display: inline-block; margin-bottom: 10px; font: 600 var(--tl-fs-eyebrow) var(--tl-font-heading); color: var(--tl-color-primary); }
+.tl-title { font-size: var(--tl-fs-h2); font-weight: 700; line-height: 1.1; }
+
+/* Botão primário: hover preenche de baixo para cima com a cor escura */
+.tl-btn { position: relative; z-index: 1; display: inline-block; padding: var(--tl-btn-pad); border-radius: var(--tl-btn-radius); background: var(--tl-color-primary); color: #fff; font: 600 16px/25px var(--tl-font-heading); text-decoration: none; overflow: hidden; transition: color .4s var(--tl-ease); }
+.tl-btn::before { content: ""; position: absolute; inset: auto 0 0 0; height: 0; background: var(--tl-color-dark); z-index: -1; transition: height .4s var(--tl-ease); }
+.tl-btn:hover::before { height: 100%; }
+.tl-btn--on-dark::before { background: #fff; }
+.tl-btn--on-dark:hover { color: var(--tl-color-dark); }
+
+/* Formulário */
+.tl-input { height: 38px; padding: 6px 12px; border: 1px solid var(--tl-color-input-border); border-radius: var(--tl-input-radius); font: 400 16px/24px var(--tl-font-body); width: 100%; }
+
+/* Card FAQ e citação */
+.tl-faq-item { background: #fff; border-radius: var(--tl-card-radius); box-shadow: var(--tl-shadow-card); }
+.tl-faq-item summary { padding: 20px 16px; font: 600 18px var(--tl-font-heading); color: var(--tl-color-dark); cursor: pointer; }
+.tl-quote { padding: 50px; background: #fff; box-shadow: var(--tl-shadow-quote), inset 4px 0 0 var(--tl-color-primary); }

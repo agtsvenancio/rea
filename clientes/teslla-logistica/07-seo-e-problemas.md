@@ -3,10 +3,10 @@
 ## SEO atual (Yoast)
 
 - `<title>`: "<Página> - Teslla" (sem palavra-chave, sem "Logística").
-- **Nenhuma página tem meta description.** Só algumas soluções têm og:description.
+- **Nenhuma das 25 páginas tem meta description** (confirmado no HTML). Só algumas soluções têm og:description.
 - Canonical, robots `index, follow, max-image-preview:large`, OG e `twitter:card summary_large_image` presentes.
 - og:image ausente na Home.
-- Search Console verificado. Sitemap provavelmente em `/sitemap_index.xml` (Yoast), não confirmado (rate limit).
+- Search Console verificado. `robots.txt` (bloco do Yoast) aponta para `/wp-sitemap.xml`, o sitemap **nativo do WordPress**; o sitemap do Yoast (`/sitemap_index.xml`) não responde. `/sample-page/` está no sitemap.
 
 ## Problemas para corrigir na migração
 
@@ -26,6 +26,7 @@
 | 12 | Imagens sem `alt` | quase todas | acessibilidade/SEO de imagem |
 | 13 | Logos e galerias duplicados no HTML (efeito marquee/slider) | várias | peso da página |
 | 14 | Itens numerados do hub com href `#0` | /solucoes/ | links mortos |
+| 20 | Botão flutuante "Solicitar Cotação" em azul `#1D72B8` e barra do blockquote em laranja `#FE5624`, fora da paleta | global / soluções | consistência visual |
 | 15 | Dois containers GTM | todas | possível duplicação de eventos |
 | 16 | `/sample-page/` publicada | | conteúdo lixo indexável |
 | 17 | Fuso horário do WP em UTC | admin | datas dos posts |

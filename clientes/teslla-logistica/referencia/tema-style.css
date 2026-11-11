@@ -1,0 +1,20 @@
+/*
+Theme Name: BLOG SEO
+Theme URI: https://taciara.com.br
+Author: Taciara Furtado
+Author URI: https://taciara.com.br
+Description: Tema personalizado para WordPress com foco em SEO, performance, Bootstrap e compatibilidade com WooCommerce.
+Version: 1.1
+Tags: blog, seo, bootstrap, woocommerce, acessível, rápido, responsivo
+Text Domain: blog-seo
+*/
+
+:focus {
+    outline: 2px solid #005fcc; /* cor visível de alto contraste */
+    outline-offset: 2px;
+  }
+  
+  :focus:not(:focus-visible) {
+    outline: none; /* compatibilidade moderna para evitar outline no clique */
+  }
+  
