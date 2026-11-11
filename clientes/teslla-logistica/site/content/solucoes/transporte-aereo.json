@@ -1,0 +1,51 @@
+{
+  "titulo": "Transporte Aéreo",
+  "slug": "transporte-aereo",
+  "pai": null,
+  "ordem": 4,
+  "icone": "/images/feature-icon-2.webp",
+  "seo": {
+    "title": "Transporte Aéreo - Teslla",
+    "description": "Soluções aéreas para remessas nacionais e internacionais, com handling especializado.",
+    "ogImage": "/images/aereo.webp"
+  },
+  "resumo": "Soluções aéreas para remessas nacionais e internacionais, com handling especializado.",
+  "hero": {
+    "fundo": "/images/aereo.webp",
+    "imagem": "/images/thumb-aereo.webp"
+  },
+  "headline": "Rapidez, segurança e controle end-to-end",
+  "paragrafos": [
+    "Oferecemos soluções aéreas para remessas nacionais e internacionais, com handling especializado, embalagens térmicas e coordenação door-to-door. Ideal para vacinas, biológicos, reposições críticas e operações multimodais."
+  ],
+  "citacao": "Para cargas farmacêuticas e biológicas aplicamos protocolos de cadeia de frio desde a origem até a entrega, telemetria quando aplicável e relatórios por remessa prontos para auditoria.",
+  "paragrafosApos": [
+    "Trabalhamos com companhias aéreas e agents de handling homologados para reduzir tempos de solo (ground time) e riscos de ruptura térmica. Oferecemos alternativas multimodais (rodo-aéreo) quando necessário, além de soluções charter e slots prioritários para demandas críticas. Antes do embarque realizamos análise técnica da ficha do produto e definimos embalagem, ULD e janelas de conexão para garantir integridade operacional."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/service-details-icon-1.webp",
+      "texto": "Linhas aéreas homologadas."
+    },
+    {
+      "icone": "/images/service-details-icon-3.webp",
+      "texto": "Planejamento end-to-end."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Posso enviar vacinas por via aérea expresso?",
+      "resposta": "Sim — dimensionamos embalagens (gelo seco / isopack / refrigeração ativa) e planejamos janelas para minimizar tempo em solo"
+    },
+    {
+      "pergunta": "Qual a diferença entre aéreo convencional e expresso?",
+      "resposta": "Convencional usa voos regulares com custo otimizado; expresso prioriza despacho, handling acelerado e opções de slots/charter para reduzir tempo total"
+    },
+    {
+      "pergunta": "Como o rodo-aéreo evita ruptura térmica nas transferências?",
+      "resposta": "Sincronizamos janelas de transferência, usamos embalagens que mantêm temperatura durante manuseios e priorizamos handling rápido no aeroporto/terminal."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": []
+}

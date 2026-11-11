@@ -10,7 +10,7 @@ Todas as páginas têm `<title>` no formato `<Título da página> - Teslla` e ne
   2. Como vocês garantem o controle da temperatura durante todo o trajeto? → telemetria 24/7 com sensores por pallet e alertas; relatório PDF por remessa; contingência (veículo reserva, rota alternativa, transbordo controlado).
   3. Vocês emitem relatórios e documentação para auditoria? → sim, logs de telemetria, checklists, comprovantes de custódia, laudos; pacote eletrônico integrável sob NDA.
   4. O que acontece em caso de falha na refrigeração? → aviso ao cliente, correção no local, veículo reserva, isolamento do produto, relatório final com ações corretivas.
-- Contadores: "remessas entregues" (K), "clientes atendidos" (+), "clientes satisfeitos" (+), "de km rodados anualmente" (M). **Valores aparecem como 0**: animação sem número real ou número faltando. Pedir números ao cliente.
+- Contadores: 25 K remessas entregues, 300 + clientes atendidos, 500 + clientes satisfeitos, 5 M de km rodados anualmente (o HTML começa em 0 e anima ao rolar).
 - 4 passos (textos): ficha técnica com temperatura, volume e janelas de coleta · operação define embalagem, roteirização, contingência e envia checklist · veículo refrigerado com telemetria por pallet e equipe treinada · monitoramento 24/7 e relatório PDF com trilha de temperatura.
 
 ## Quem Somos

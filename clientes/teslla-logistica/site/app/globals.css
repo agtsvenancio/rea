@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-heading: 'DM Sans';
+  --font-body: 'Poppins';
+  --font-nav: 'Roboto';
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white font-body text-base leading-[25px] text-body antialiased; }
+  h1, h2, h3, h4, h5, h6 { @apply font-heading text-dark; }
+  :focus-visible { outline: 2px solid #005fcc; outline-offset: 2px; }
+}
+
+@layer components {
+  .secao { @apply py-[50px] md:py-[70px] lg:py-[120px]; }
+  .eyebrow { @apply mb-2.5 inline-block font-heading text-base font-semibold capitalize text-primary md:text-eyebrow; }
+  .titulo-secao { @apply font-heading text-[32px] font-bold leading-[1.1] text-dark lg:text-[38px]; }
+
+  .btn-teslla {
+    @apply relative z-[1] inline-flex items-center gap-2 overflow-hidden bg-primary px-[30px] py-3 font-heading text-base font-semibold leading-[25px] text-white transition-colors duration-[400ms] ease-teslla;
+  }
+  .btn-teslla::before {
+    content: ''; @apply absolute inset-x-0 bottom-0 -z-[1] h-0 bg-dark transition-[height] duration-[400ms] ease-teslla;
+  }
+  .btn-teslla:hover::before { @apply h-full; }
+  .btn-teslla--claro::before { @apply bg-white; }
+  .btn-teslla--claro:hover { @apply text-dark; }
+
+  .campo { @apply h-[46px] w-full rounded-md border border-[#DEE2E6] bg-white px-3 text-base text-[#212529] outline-none transition focus:border-primary; }
+  .rotulo { @apply mb-1 block text-sm font-medium text-dark; }
+
+  .prose-teslla p { @apply mb-4; }
+  .prose-teslla h2 { @apply mb-3 mt-8 text-2xl font-bold; }
+  .prose-teslla h3 { @apply mb-2 mt-6 text-xl font-semibold; }
+  .prose-teslla ul { @apply mb-4 list-disc space-y-1 pl-6; }
+  .prose-teslla a { @apply font-medium text-primary underline; }
+  .prose-teslla strong { @apply text-dark; }
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }

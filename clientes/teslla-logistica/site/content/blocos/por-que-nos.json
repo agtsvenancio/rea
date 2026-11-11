@@ -1,0 +1,22 @@
+{
+  "tipo": "por-que-nos",
+  "eyebrow": "Frota dedicada",
+  "titulo": "Somos a escolha certa para transporte farmacêutico — segurança, rastreio e cumprimento regulatório",
+  "itens": [
+    {
+      "icone": "/images/content-1.webp",
+      "titulo": "Proteção garantida",
+      "texto": "Projetamos a operação para proteger seu produto: temperatura garantida, evidências por lote e resposta imediata a qualquer desvio."
+    },
+    {
+      "icone": "/images/content-1.webp",
+      "titulo": "Monitoramento contínuo",
+      "texto": "Monitoramento contínuo por pallet — você acompanha cada remoção e cada parada."
+    }
+  ],
+  "botao": {
+    "texto": "Fale com um Especialista",
+    "href": "whatsapp"
+  },
+  "imagem": "/images/Somos-a-Escolha-certa.webp"
+}

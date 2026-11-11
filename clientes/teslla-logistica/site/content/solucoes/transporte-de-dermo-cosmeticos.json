@@ -1,0 +1,72 @@
+{
+  "titulo": "Transporte de Dermo Cosméticos",
+  "slug": "transporte-de-dermo-cosmeticos",
+  "pai": "transporte-de-medicamentos",
+  "ordem": 6,
+  "icone": "/images/Dermo-Cosmeticos.webp",
+  "seo": {
+    "title": "Transporte de Dermo Cosméticos - Teslla",
+    "description": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+    "ogImage": "/images/capa.webp"
+  },
+  "resumo": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+  "hero": {
+    "fundo": "/images/capa.webp",
+    "imagem": "/images/etiqueta-cosmeticos-saude-saude-belleza-scaled.webp"
+  },
+  "headline": "Logística especializada, monitoramento ambiental e rastreabilidade: qualidade garantida no transporte de dermo cosméticos",
+  "paragrafos": [
+    "Realizamos o transporte de dermo cosméticos, produtos dermatológicos e itens sensíveis para saúde e beleza com processos que asseguram a integridade, o controle ambiental e a total rastreabilidade do início ao fim da cadeia logística. Nossa operação atende aos mais altos padrões do setor, garantindo que cada produto chegue ao destino final preservando suas propriedades e eficácia."
+  ],
+  "citacao": "Atuamos com frota climatizada, monitoramento digital 24h, registros automáticos de temperatura e protocolos específicos para situações imprevistas.",
+  "paragrafosApos": [
+    "O transporte de dermo cosméticos exige cuidados diferenciados, devido à sensibilidade dos ativos e à necessidade de manter condições ideais durante todo o trajeto. Nossa equipe realiza análise prévia de cada remessa, indica embalagens adequadas e seleciona rotas seguras para evitar qualquer exposição inadequada à luz, calor ou umidade.",
+    "Após a entrega, fornecemos relatórios detalhados, com histórico de temperatura, checklist de integridade e registros eletrônicos de cada etapa — facilitando processos de auditoria, compliance e garantindo a confiança do cliente final.",
+    "Também oferecemos envio-piloto para validação dos processos antes de operações em maior escala, assegurando tranquilidade para indústrias, distribuidores e clínicas de estética."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/about-icon-5.webp",
+      "texto": "Rastreamento completo e controle de qualidade em todas as etapas."
+    },
+    {
+      "icone": "/images/outsport-icon-1.webp",
+      "texto": "Preservação das características sensoriais e funcionais dos produtos."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Vocês fazem transporte de vacinas e biológicos?",
+      "resposta": "Sim — operamos com protocolos específicos de embalagem, cadeia de custódia e validação de temperatura"
+    },
+    {
+      "pergunta": "Vocês entregam relatórios de temperatura?",
+      "resposta": "Sim — cada remessa recebe um relatório PDF com a trilha de temperatura e eventos"
+    },
+    {
+      "pergunta": "O que acontece em caso de desvio térmico?",
+      "resposta": "Ativamos o plano de contingência (alerta, veículo reserva, transferência controlada) e registramos todas as ações no relatório."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": [
+    {
+      "tipo": "compartilhado",
+      "id": "por-que-nos"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "logos"
+    }
+  ],
+  "secoesDepoisFaq": [
+    {
+      "tipo": "compartilhado",
+      "id": "estrutura-operacional"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "impulsione"
+    }
+  ]
+}

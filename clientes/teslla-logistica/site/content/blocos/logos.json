@@ -1,0 +1,21 @@
+{
+  "tipo": "logos",
+  "imagens": [
+    {
+      "src": "/images/policia-civil-scaled.webp",
+      "alt": "Polícia Civil"
+    },
+    {
+      "src": "/images/anvisa.webp",
+      "alt": "ANVISA"
+    },
+    {
+      "src": "/images/policia-federal.webp",
+      "alt": "Polícia Federal"
+    },
+    {
+      "src": "/images/ibama.webp",
+      "alt": "IBAMA"
+    }
+  ]
+}

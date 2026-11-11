@@ -1,0 +1,72 @@
+{
+  "titulo": "Transporte de Medicamentos Comuns",
+  "slug": "transporte-de-medicamentos-comuns",
+  "pai": "transporte-de-medicamentos",
+  "ordem": 8,
+  "icone": "/images/Medicamentos-Comuns.webp",
+  "seo": {
+    "title": "Transporte de Medicamentos Comuns - Teslla",
+    "description": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+    "ogImage": "/images/capa.webp"
+  },
+  "resumo": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+  "hero": {
+    "fundo": "/images/capa.webp",
+    "imagem": "/images/comprimidos-e-seringas-scaled.webp"
+  },
+  "headline": "Eficiência logística, integridade dos produtos e conformidade: transporte de medicamentos comuns",
+  "paragrafos": [
+    "Oferecemos transporte de medicamentos comuns — genéricos, similares e isentos de prescrição — com foco em agilidade e manutenção da qualidade, seguindo os protocolos recomendados para a cadeia farmacêutica."
+  ],
+  "citacao": "Nossa frota climatizada, rastreamento contínuo e registros automáticos de temperatura garantem o cuidado e a integridade desde o embarque até o recebimento.",
+  "paragrafosApos": [
+    "Cada remessa é avaliada de acordo com as necessidades do produto, definimos rotas seguras, sugerimos embalagens apropriadas e monitoramos a temperatura ambiente para evitar qualquer variação que possa afetar o medicamento.",
+    "Ao término da entrega, você recebe um relatório completo com todos os dados operacionais — importante para auditoria, rastreio e compliance.",
+    "Para novos clientes ou operações especiais, disponibilizamos envio-teste para validação de todos os processos logísticos."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/about-icon-5.webp",
+      "texto": "Entregas pontuais, com controle total da jornada."
+    },
+    {
+      "icone": "/images/outsport-icon-1.webp",
+      "texto": "Redução de riscos operacionais e maior previsibilidade."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Vocês fazem transporte de vacinas e biológicos?",
+      "resposta": "Sim — operamos com protocolos específicos de embalagem, cadeia de custódia e validação de temperatura"
+    },
+    {
+      "pergunta": "Vocês entregam relatórios de temperatura?",
+      "resposta": "Sim — cada remessa recebe um relatório PDF com a trilha de temperatura e eventos"
+    },
+    {
+      "pergunta": "O que acontece em caso de desvio térmico?",
+      "resposta": "Ativamos o plano de contingência (alerta, veículo reserva, transferência controlada) e registramos todas as ações no relatório."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": [
+    {
+      "tipo": "compartilhado",
+      "id": "por-que-nos"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "logos"
+    }
+  ],
+  "secoesDepoisFaq": [
+    {
+      "tipo": "compartilhado",
+      "id": "estrutura-operacional"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "impulsione"
+    }
+  ]
+}

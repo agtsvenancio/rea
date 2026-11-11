@@ -1,0 +1,72 @@
+{
+  "titulo": "Transporte de Saneantes",
+  "slug": "transporte-de-saneantes",
+  "pai": "transporte-de-medicamentos",
+  "ordem": 2,
+  "icone": "/images/Saneantes.webp",
+  "seo": {
+    "title": "Transporte de Saneantes - Teslla",
+    "description": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+    "ogImage": "/images/capa.webp"
+  },
+  "resumo": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+  "hero": {
+    "fundo": "/images/capa.webp",
+    "imagem": "/images/Saneantes-1.webp"
+  },
+  "headline": "Frota especializada, monitoramento contínuo e relatórios técnicos por remessa: segurança e conformidade no transporte de saneantes",
+  "paragrafos": [
+    "Oferecemos transporte dedicado para saneantes, produtos de limpeza e desinfetantes, com controle rigoroso de temperatura, monitoramento em tempo real e processos auditáveis. Cada operação é planejada de acordo com as exigências técnicas e regulatórias, minimizando riscos, prevenindo perdas e garantindo a conformidade desde a origem até o destino final."
+  ],
+  "citacao": "Trabalhamos com sensores de temperatura, rastreamento 24/7, registros detalhados por remessa e protocolos de contingência prontos para qualquer eventualidade.",
+  "paragrafosApos": [
+    "A escolha da transportadora faz toda a diferença para assegurar a qualidade e a integridade dos saneantes ao longo do transporte. Nossa solução logística alia engenharia especializada, frota preparada e monitoramento contínuo para manter seus produtos dentro dos padrões exigidos em cada etapa: coleta, armazenagem, transporte e entrega.",
+    "Cada envio é submetido a uma análise técnica criteriosa, definindo a embalagem ideal, rotas homologadas e janelas de entrega adequadas. Durante a operação, todos os dados de temperatura e movimentação são registrados e ao final, você recebe um relatório técnico completo em PDF — documento pronto para auditorias e compliance.",
+    "Quando necessário, realizamos envios-piloto para validar os procedimentos antes da operação em escala, garantindo máxima segurança e regularidade para o transporte de saneantes."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/about-icon-5.webp",
+      "texto": "Previsibilidade total na operação e nas entregas."
+    },
+    {
+      "icone": "/images/service-details-icon-1.webp",
+      "texto": "Menos perdas por variações de temperatura."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Vocês fazem transporte de vacinas e biológicos?",
+      "resposta": "Sim — operamos com protocolos específicos de embalagem, cadeia de custódia e validação de temperatura"
+    },
+    {
+      "pergunta": "Vocês entregam relatórios de temperatura?",
+      "resposta": "Sim — cada remessa recebe um relatório PDF com a trilha de temperatura e eventos"
+    },
+    {
+      "pergunta": "O que acontece em caso de desvio térmico?",
+      "resposta": "Ativamos o plano de contingência (alerta, veículo reserva, transferência controlada) e registramos todas as ações no relatório."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": [
+    {
+      "tipo": "compartilhado",
+      "id": "por-que-nos"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "logos"
+    }
+  ],
+  "secoesDepoisFaq": [
+    {
+      "tipo": "compartilhado",
+      "id": "estrutura-operacional"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "impulsione"
+    }
+  ]
+}

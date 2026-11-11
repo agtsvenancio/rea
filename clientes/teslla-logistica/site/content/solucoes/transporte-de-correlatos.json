@@ -1,0 +1,72 @@
+{
+  "titulo": "Transporte de Correlatos",
+  "slug": "transporte-de-correlatos",
+  "pai": "transporte-de-medicamentos",
+  "ordem": 5,
+  "icone": "/images/Correlatos.webp",
+  "seo": {
+    "title": "Transporte de Correlatos - Teslla",
+    "description": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+    "ogImage": "/images/capa.webp"
+  },
+  "resumo": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+  "hero": {
+    "fundo": "/images/capa.webp",
+    "imagem": "/images/Foto-site-3.webp"
+  },
+  "headline": "Solução logística completa, controle de integridade e rastreio detalhado: excelência no transporte de correlatos",
+  "paragrafos": [
+    "Oferecemos transporte especializado para produtos correlatos — materiais hospitalares, equipamentos médicos, odontológicos e itens descartáveis — com processos que garantem segurança, rastreabilidade e conformidade regulatória em todas as etapas da operação. Nossa estrutura é preparada para preservar a integridade dos produtos e atender às demandas de hospitais, clínicas, distribuidores e laboratórios."
+  ],
+  "citacao": "Trabalhamos com frota adequada, monitoramento digital em tempo real, registros de cada movimentação e protocolos de contingência para situações emergenciais.",
+  "paragrafosApos": [
+    "O transporte de correlatos exige planejamento minucioso, escolha das embalagens corretas e atenção a detalhes técnicos para evitar danos, contaminações ou extravios. Nossa equipe realiza análise prévia das cargas, orienta sobre o acondicionamento ideal e seleciona rotas seguras, sempre priorizando a pontualidade e a segurança.",
+    "Após a entrega, disponibilizamos relatórios completos com registro de temperatura (quando necessário), checklist de integridade e histórico de todo o trajeto — facilitando auditorias, processos de compliance e a confiança de todos os envolvidos.",
+    "Também oferecemos a opção de envio-piloto para validação dos processos antes de grandes remessas, garantindo qualidade e tranquilidade ao cliente."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/about-icon-5.webp",
+      "texto": "Rastreamento e acompanhamento detalhado em todas as etapas."
+    },
+    {
+      "icone": "/images/outsport-icon-1.webp",
+      "texto": "Proteção total contra avarias, extravios e contaminações."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Vocês fazem transporte de vacinas e biológicos?",
+      "resposta": "Sim — operamos com protocolos específicos de embalagem, cadeia de custódia e validação de temperatura"
+    },
+    {
+      "pergunta": "Vocês entregam relatórios de temperatura?",
+      "resposta": "Sim — cada remessa recebe um relatório PDF com a trilha de temperatura e eventos"
+    },
+    {
+      "pergunta": "O que acontece em caso de desvio térmico?",
+      "resposta": "Ativamos o plano de contingência (alerta, veículo reserva, transferência controlada) e registramos todas as ações no relatório."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": [
+    {
+      "tipo": "compartilhado",
+      "id": "por-que-nos"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "logos"
+    }
+  ],
+  "secoesDepoisFaq": [
+    {
+      "tipo": "compartilhado",
+      "id": "estrutura-operacional"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "impulsione"
+    }
+  ]
+}

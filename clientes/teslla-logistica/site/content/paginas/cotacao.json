@@ -1,0 +1,18 @@
+{
+  "titulo": "Cotação",
+  "slug": "cotacao",
+  "seo": {
+    "title": "Cotação de Frete | Teslla Logística",
+    "description": "Solicite uma cotação de transporte com a Teslla Logística: informe origem, destino e dados da carga e receba o retorno da nossa equipe.",
+    "ogImage": "/images/Terrestre-1.webp"
+  },
+  "hero": {
+    "fundo": "/images/Terrestre-1.webp"
+  },
+  "secoes": [
+    {
+      "tipo": "form-cotacao",
+      "titulo": "Faça sua Cotação com a gente!"
+    }
+  ]
+}

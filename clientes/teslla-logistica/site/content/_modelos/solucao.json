@@ -1,0 +1,30 @@
+{
+  "titulo": "Transporte de Exemplo",
+  "slug": "transporte-de-exemplo",
+  "pai": null,
+  "ordem": 99,
+  "icone": "/images/feature-icon-2.webp",
+  "seo": {
+    "title": "Transporte de Exemplo | Teslla Logística",
+    "description": "Uma frase de até 155 caracteres com a palavra-chave principal da página.",
+    "ogImage": "/images/capa.webp"
+  },
+  "resumo": "Frase curta que aparece no card da solução.",
+  "hero": { "fundo": "/images/capa.webp", "imagem": "/images/thumb-terrestre.webp" },
+  "headline": "Título H2 longo da página, com a proposta de valor",
+  "paragrafos": ["Primeiro parágrafo (antes da citação)."],
+  "citacao": "Frase de destaque que aparece em caixa com barra vermelha.",
+  "paragrafosApos": ["Parágrafos depois da citação."],
+  "destaques": [
+    { "icone": "/images/service-details-icon-1.webp", "texto": "Benefício curto 1." },
+    { "icone": "/images/service-details-icon-3.webp", "texto": "Benefício curto 2." }
+  ],
+  "faq": [
+    { "pergunta": "Pergunta 1?", "resposta": "Resposta 1." },
+    { "pergunta": "Pergunta 2?", "resposta": "Resposta 2." },
+    { "pergunta": "Pergunta 3?", "resposta": "Resposta 3." }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": [{ "tipo": "compartilhado", "id": "por-que-nos" }],
+  "secoesDepoisFaq": []
+}

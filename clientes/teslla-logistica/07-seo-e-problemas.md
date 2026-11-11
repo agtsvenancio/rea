@@ -17,7 +17,7 @@
 | 3 | Sem meta description | todas | CTR no Google |
 | 4 | Links para o domínio de staging `blanchedalmond-stinkbug-185073.hostingersite.com` | posts Aéreo Expresso e Motofrete | links quebrados/vazamento de staging |
 | 5 | Breadcrumb "Soluções" aponta para `/archive-solucoes/` | soluções | URL duplicada |
-| 6 | Contadores da Home mostram 0 | home | credibilidade |
+| 6 | Contadores da Home começam em 0 e só animam ao rolar (valores reais: 25 K, 300+, 500+, 5 M); leitores e prints veem 0 | home | credibilidade |
 | 7 | "Atendimento Emegencial 24h" (erro de digitação) | topo, global | |
 | 8 | "reefrigeradas" | Terrestre | |
 | 9 | H2 do Aduaneiro é cópia do Terrestre | Aduaneiro | conteúdo duplicado |

@@ -17,6 +17,7 @@ Objetivo: documentar o site atual para construir novas páginas no mesmo padrão
 | [referencia/](referencia/) | CSS original do tema e CSS customizado do WordPress |
 | [07-seo-e-problemas.md](07-seo-e-problemas.md) | Metas, problemas encontrados e o que corrigir na migração |
 | [sitemap.json](sitemap.json) | Sitemap em formato estruturado para script de migração |
+| [site/](site/) | **Novo site em Next.js + Tailwind**, exportado como estático para a Hostinger (ver [site/README.md](site/README.md)) |
 
 ## Resumo
 

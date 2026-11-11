@@ -1,0 +1,16 @@
+{
+  "titulo": "Título da Página",
+  "slug": "titulo-da-pagina",
+  "seo": {
+    "title": "Título da Página | Teslla Logística",
+    "description": "Uma frase de até 155 caracteres para o Google.",
+    "ogImage": "/images/capa.webp"
+  },
+  "hero": { "fundo": "/images/Terrestre-1.webp" },
+  "secoes": [
+    { "tipo": "texto", "eyebrow": "Eyebrow", "titulo": "Título da seção", "paragrafos": ["Parágrafo."], "botao": { "texto": "Fale com um Especialista", "href": "whatsapp" } },
+    { "tipo": "compartilhado", "id": "por-que-nos" },
+    { "tipo": "faq", "eyebrow": "FAQ", "titulo": "Perguntas Frequentes", "itens": [{ "pergunta": "Pergunta?", "resposta": "Resposta." }] },
+    { "tipo": "compartilhado", "id": "cta-final" }
+  ]
+}

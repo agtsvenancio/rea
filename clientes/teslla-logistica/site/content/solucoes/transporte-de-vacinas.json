@@ -1,0 +1,72 @@
+{
+  "titulo": "Transporte de Vacinas",
+  "slug": "transporte-de-vacinas",
+  "pai": "transporte-de-medicamentos",
+  "ordem": 4,
+  "icone": "/images/Vacinas.webp",
+  "seo": {
+    "title": "Transporte de Vacinas - Teslla",
+    "description": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+    "ogImage": "/images/capa.webp"
+  },
+  "resumo": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+  "hero": {
+    "fundo": "/images/capa.webp",
+    "imagem": "/images/arranjo-de-coronavirus-com-frasco-de-vacina-e-seringa-scaled.webp"
+  },
+  "headline": "Transporte de Vacinas: Frota Especializada, Monitoramento Contínuo e Segurança do Início ao Fim",
+  "paragrafos": [
+    "Oferecemos transporte especializado de vacinas, medicamentos termolábeis e insumos biológicos com rigoroso controle de temperatura, monitoramento em tempo real e processos auditáveis. Cada operação é planejada conforme a ficha técnica das vacinas para evitar perdas, garantir conformidade e assegurar a previsibilidade nas entregas."
+  ],
+  "citacao": "Trabalhamos com sensores de temperatura, rastreamento 24/7, registros detalhados por remessa e protocolos de contingência prontos para qualquer eventualidade.",
+  "paragrafosApos": [
+    "A escolha da transportadora faz toda a diferença quando o assunto é transporte de vacinas. Nossa solução integra engenharia operacional, frota refrigerada exclusiva e monitoramento inteligente para manter a integridade das vacinas em todas as etapas: coleta, armazenagem, transporte e entrega.",
+    "Cada envio passa por uma análise técnica rigorosa, que determina o tipo de embalagem térmica ideal, rotas otimizadas e janelas de entrega estratégicas. Durante toda a operação, nossos sistemas registram automaticamente a temperatura, gerando relatórios completos com evidências para auditorias e compliance regulatório. Ao final do processo, você recebe um relatório técnico em PDF, com toda a trilha de temperatura e ocorrências registradas.",
+    "Se necessário, realizamos envios-piloto para validação de cada etapa antes da homologação em escala, garantindo a máxima segurança para vacinas e imunobiológicos."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/about-icon-5.webp",
+      "texto": "Confiabilidade operacional e cumprimento rigoroso dos prazos de entrega."
+    },
+    {
+      "icone": "/images/service-details-icon-1.webp",
+      "texto": "Menor risco de perdas por variações térmicas."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Vocês fazem transporte de vacinas e biológicos?",
+      "resposta": "Sim — operamos com protocolos específicos de embalagem, cadeia de custódia e validação de temperatura"
+    },
+    {
+      "pergunta": "Vocês entregam relatórios de temperatura?",
+      "resposta": "Sim — cada remessa recebe um relatório PDF com a trilha de temperatura e eventos"
+    },
+    {
+      "pergunta": "O que acontece em caso de desvio térmico?",
+      "resposta": "Ativamos o plano de contingência (alerta, veículo reserva, transferência controlada) e registramos todas as ações no relatório."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": [
+    {
+      "tipo": "compartilhado",
+      "id": "por-que-nos"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "logos"
+    }
+  ],
+  "secoesDepoisFaq": [
+    {
+      "tipo": "compartilhado",
+      "id": "estrutura-operacional"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "impulsione"
+    }
+  ]
+}

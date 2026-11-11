@@ -1,0 +1,72 @@
+{
+  "titulo": "Transporte de Insumos Farmacêuticos",
+  "slug": "transporte-de-insumos-farmaceuticos",
+  "pai": "transporte-de-medicamentos",
+  "ordem": 7,
+  "icone": "/images/Insumos-Farmaceuticos.webp",
+  "seo": {
+    "title": "Transporte de Insumos Farmacêuticos - Teslla",
+    "description": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+    "ogImage": "/images/capa.webp"
+  },
+  "resumo": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+  "hero": {
+    "fundo": "/images/capa.webp",
+    "imagem": "/images/algumas-pilulas-espalhadas-com-mascaras-spray-frasco-de-comprimidos-agulhas-sobre-fundo-ciano-claro-vista-superior-scaled.webp"
+  },
+  "headline": "Planejamento rigoroso, monitoramento digital e rastreio por lote: segurança e qualidade no transporte de insumos farmacêuticos",
+  "paragrafos": [
+    "Oferecemos soluções completas para o transporte de insumos farmacêuticos, princípios ativos, excipientes e matérias-primas, seguindo protocolos que asseguram a integridade e a rastreabilidade em todas as etapas da cadeia logística. Nossa operação é estruturada para atender as exigências do setor, garantindo que cada componente chegue ao destino nas condições ideais para uso industrial ou laboratorial."
+  ],
+  "citacao": "Trabalhamos com frota climatizada, rastreamento em tempo real, registros digitais de temperatura e planos de contingência para imprevistos.",
+  "paragrafosApos": [
+    "A logística de insumos farmacêuticos requer análise técnica detalhada, escolha adequada das embalagens, controle de exposição ambiental e documentação completa. Nossa equipe realiza um planejamento prévio da operação, define rotas otimizadas e acompanha cada lote por sistemas digitais, evitando riscos de contaminação ou degradação do material.",
+    "Ao final do transporte, entregamos relatórios técnicos com dados de temperatura, tempo de trânsito, checklist de integridade e registro de qualquer ocorrência — facilitando auditorias e compliance.",
+    "Também oferecemos a opção de envio-piloto para validação dos procedimentos antes da homologação de contratos maiores, assegurando qualidade e segurança desde o primeiro embarque."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/about-icon-5.webp",
+      "texto": "Preservação total das propriedades químicas e físicas."
+    },
+    {
+      "icone": "/images/outsport-icon-1.webp",
+      "texto": "Rastreamento detalhado, do embarque à entrega final."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Vocês fazem transporte de vacinas e biológicos?",
+      "resposta": "Sim — operamos com protocolos específicos de embalagem, cadeia de custódia e validação de temperatura"
+    },
+    {
+      "pergunta": "Vocês entregam relatórios de temperatura?",
+      "resposta": "Sim — cada remessa recebe um relatório PDF com a trilha de temperatura e eventos"
+    },
+    {
+      "pergunta": "O que acontece em caso de desvio térmico?",
+      "resposta": "Ativamos o plano de contingência (alerta, veículo reserva, transferência controlada) e registramos todas as ações no relatório."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": [
+    {
+      "tipo": "compartilhado",
+      "id": "por-que-nos"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "logos"
+    }
+  ],
+  "secoesDepoisFaq": [
+    {
+      "tipo": "compartilhado",
+      "id": "estrutura-operacional"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "impulsione"
+    }
+  ]
+}

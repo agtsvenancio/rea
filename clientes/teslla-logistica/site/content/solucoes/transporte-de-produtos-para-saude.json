@@ -1,0 +1,72 @@
+{
+  "titulo": "Transporte de Produtos para Saúde",
+  "slug": "transporte-de-produtos-para-saude",
+  "pai": "transporte-de-medicamentos",
+  "ordem": 1,
+  "icone": "/images/Produtos-para-saude.webp",
+  "seo": {
+    "title": "Transporte de Produtos para Saúde - Teslla",
+    "description": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+    "ogImage": "/images/capa.webp"
+  },
+  "resumo": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+  "hero": {
+    "fundo": "/images/capa.webp",
+    "imagem": "/images/muitos-tipos-de-equipamentos-medicos-gerenciam-o-cirurgiao-para-iniciar-as-operacoes-na-sala-de-operacoes-scaled.webp"
+  },
+  "headline": "Logística especializada, acompanhamento digital e documentação completa: excelência no transporte de produtos para saúde",
+  "paragrafos": [
+    "Realizamos o transporte de produtos para saúde, insumos hospitalares e dispositivos médicos com atenção máxima à integridade, rastreamento digital durante todo o percurso e processos alinhados às exigências sanitárias. Cada operação é cuidadosamente planejada conforme as normas técnicas, reduzindo o risco de avarias e assegurando entregas dentro dos padrões mais rigorosos do setor."
+  ],
+  "citacao": "Utilizamos tecnologia embarcada para controle ambiental, rastreio em tempo real, registros eletrônicos de cada viagem e planos de ação para situações emergenciais.",
+  "paragrafosApos": [
+    "A confiança no parceiro logístico é fundamental para garantir que materiais sensíveis cheguem com total segurança ao destino. Nossa infraestrutura inclui veículos adaptados, motoristas capacitados e sistemas inteligentes de monitoramento, mantendo condições ideais desde a coleta até o destinatário final.",
+    "Antes de cada envio, avaliamos as necessidades do produto, selecionamos embalagens apropriadas e rotas mais seguras, sempre priorizando rapidez e segurança. Ao final do processo, fornecemos laudos detalhados com informações do trajeto, registro das temperaturas e checklist operacional — tudo pronto para inspeções ou auditorias.",
+    "Quando solicitado, testamos a operação em pequena escala, validando todas as etapas para sua total tranquilidade."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/especializacao-farma-2.svg",
+      "texto": "Preservação das características dos produtos, sem desvios ou perdas."
+    },
+    {
+      "icone": "/images/frota-dedicada-2.svg",
+      "texto": "Transparência em cada etapa e garantia de entrega no prazo combinado."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Vocês fazem transporte de vacinas e biológicos?",
+      "resposta": "Sim — operamos com protocolos específicos de embalagem, cadeia de custódia e validação de temperatura"
+    },
+    {
+      "pergunta": "Vocês entregam relatórios de temperatura?",
+      "resposta": "Sim — cada remessa recebe um relatório PDF com a trilha de temperatura e eventos"
+    },
+    {
+      "pergunta": "O que acontece em caso de desvio térmico?",
+      "resposta": "Ativamos o plano de contingência (alerta, veículo reserva, transferência controlada) e registramos todas as ações no relatório."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": [
+    {
+      "tipo": "compartilhado",
+      "id": "por-que-nos"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "logos"
+    }
+  ],
+  "secoesDepoisFaq": [
+    {
+      "tipo": "compartilhado",
+      "id": "estrutura-operacional"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "impulsione"
+    }
+  ]
+}

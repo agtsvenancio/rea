@@ -1,0 +1,52 @@
+{
+  "titulo": "Carga Fracionada",
+  "slug": "carga-fracionada",
+  "pai": null,
+  "ordem": 5,
+  "icone": "/images/feature-icon-2.webp",
+  "seo": {
+    "title": "Carga Fracionada - Teslla",
+    "description": "Consolidamos cargas com critérios operacionais rigorosos.",
+    "ogImage": "/images/carga-fracionada.webp"
+  },
+  "resumo": "Consolidamos cargas com critérios operacionais rigorosos.",
+  "hero": {
+    "fundo": "/images/carga-fracionada.webp",
+    "imagem": "/images/thumb-carga-fracionada.webp"
+  },
+  "headline": "Consolidação eficiente com rastreabilidade por lote",
+  "paragrafos": [
+    "O serviço de Carga Fracionada da Teslla consolida mercadorias de vários clientes em uma única operação, mantendo controle individual por lote, rastreabilidade e SLA definidos — ideal para pequenas e médias demandas que buscam economia e previsibilidade."
+  ],
+  "citacao": "Reduza custos sem abrir mão de controle: consolidação segura, visibilidade total e prazos competitivos.",
+  "paragrafosApos": [
+    "Consolidamos cargas com critérios operacionais rigorosos: separação por cliente, etiquetagem por lote, registro de temperatura quando necessário e administração documental que preserva o histórico de cada unidade. Nossa inteligência logística calcula consolidações que otimizam espaço e custo, sem comprometer a pontualidade.",
+    "A visibilidade é garantida por sistemas de rastreio e gestão integrados — cada cliente acompanha seu lote com atualização no status de coleta, trânsito e entrega. Para produtos sensíveis aplicamos camadas extras de controle (câmaras frias, sensores por pallet, embalagens térmicas) e relatórios por remessa quando exigido. Oferecemos SLAs acordados e planos de contingência para minimizar riscos operacionais."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/service-details-icon-3.webp",
+      "texto": "Rastreio por lote e monitoramento."
+    },
+    {
+      "icone": "/images/service-details-icon-3.webp",
+      "texto": "Entrega conforme janelas acordadas."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Minha carga corre risco ao ser transportada de forma fracionada?",
+      "resposta": "Na Teslla aplicamos segregação por lote, etiquetagem, procedimentos de manuseio e, quando aplicável, controle de temperatura. Cada remessa mantém sua trilha documental e é monitorada no sistema — isso reduz riscos operacionais e garante rastreabilidade equivalente à carga dedicada."
+    },
+    {
+      "pergunta": "Como funciona a consolidação de cargas na Teslla?",
+      "resposta": "Recebemos os embarques, triamos por rota e compatibilidade, etiquetamos por cliente, consolidamos em paletes ou compartimentos, transportamos com rastreio por lote e, na chegada, fazemos a desconsolidação e as entregas finais conforme janelas acordadas."
+    },
+    {
+      "pergunta": "Quais produtos posso enviar como carga fracionada?",
+      "resposta": "Aceitamos bens de consumo, peças, insumos industriais, materiais promocionais e muitos insumos farmacêuticos embalados/validados para transporte fracionado. Produtos que exigem condições críticas (vacinas, alguns biológicos) podem ser aceitos desde que haja embalagem térmica e acordo prévio; em alguns casos recomendamos carga dedicada."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": []
+}
