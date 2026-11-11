@@ -1,0 +1,72 @@
+{
+  "titulo": "Transporte de Medicamentos de Controle Especial",
+  "slug": "transporte-de-medicamentos-de-controle-especial",
+  "pai": "transporte-de-medicamentos",
+  "ordem": 9,
+  "icone": "/images/Medicamentos-de-controle-especial.webp",
+  "seo": {
+    "title": "Transporte de Medicamentos de Controle Especial - Teslla",
+    "description": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+    "ogImage": "/images/capa.webp"
+  },
+  "resumo": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+  "hero": {
+    "fundo": "/images/capa.webp",
+    "imagem": "/images/WhatsApp-Image-2025-09-17-at-16.48.22.webp"
+  },
+  "headline": "Solução logística sob medida, vigilância em tempo real e documentação rigorosa: confiança no transporte de medicamentos de controle especial",
+  "paragrafos": [
+    "Realizamos o transporte de medicamentos de controle especial, psicotrópicos e substâncias sujeitas a regime restrito, priorizando integridade, segurança e total rastreabilidade. Cada etapa do serviço é planejada conforme as exigências legais e sanitárias, prevenindo desvios e assegurando a conformidade em todas as movimentações."
+  ],
+  "citacao": "Contamos com monitoramento remoto, registros eletrônicos de temperatura, escolta opcional e protocolos detalhados para qualquer intercorrência.",
+  "paragrafosApos": [
+    "Transportar medicamentos de controle especial requer responsabilidade e tecnologia. Nossa estrutura inclui veículos equipados para controle de ambiente, equipe treinada e procedimentos rigorosos para garantir que o produto chegue íntegro e dentro dos parâmetros legais até o destino.",
+    "Antes da coleta, avaliamos o tipo de medicamento, determinando acondicionamento, documentação específica e melhores trajetos, sempre considerando exigências da Anvisa e outros órgãos. Durante a operação, todo o caminho é monitorado e documentado — e, ao final, disponibilizamos relatórios técnicos e registros para auditorias ou apresentação à fiscalização.",
+    "Sempre que necessário, realizamos testes piloto para validação de todo o fluxo logístico antes de operar em maior escala."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/about-icon-5.webp",
+      "texto": "Entregas certificadas, com prazos garantidos e total transparência."
+    },
+    {
+      "icone": "/images/outsport-icon-1.webp",
+      "texto": "Eliminação de riscos de violação ou extravio."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Vocês fazem transporte de vacinas e biológicos?",
+      "resposta": "Sim — operamos com protocolos específicos de embalagem, cadeia de custódia e validação de temperatura"
+    },
+    {
+      "pergunta": "Vocês entregam relatórios de temperatura?",
+      "resposta": "Sim — cada remessa recebe um relatório PDF com a trilha de temperatura e eventos"
+    },
+    {
+      "pergunta": "O que acontece em caso de desvio térmico?",
+      "resposta": "Ativamos o plano de contingência (alerta, veículo reserva, transferência controlada) e registramos todas as ações no relatório."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": [
+    {
+      "tipo": "compartilhado",
+      "id": "por-que-nos"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "logos"
+    }
+  ],
+  "secoesDepoisFaq": [
+    {
+      "tipo": "compartilhado",
+      "id": "estrutura-operacional"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "impulsione"
+    }
+  ]
+}

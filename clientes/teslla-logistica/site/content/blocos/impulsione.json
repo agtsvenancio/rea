@@ -1,0 +1,19 @@
+{
+  "tipo": "sobre",
+  "antetitulo": "Transporte de Medicamentos",
+  "eyebrow": "Referência no mercado de transporte",
+  "titulo": "Impulsione a eficiência da sua cadeia farmacêutica",
+  "paragrafos": [
+    "Nossa operação une tecnologia, processos e gente qualificada para reduzir perdas, garantir conformidade regulatória e acelerar ciclos de distribuição. Com rotas validadas, frota refrigerada e telemetria integrada, entregamos previsibilidade e segurança — do carregamento ao ponto de entrega."
+  ],
+  "botao": {
+    "texto": "Fale com um Especialista",
+    "href": "whatsapp"
+  },
+  "imagens": [
+    "/images/WhatsApp-Image-2025-09-11-at-17.46.48.webp",
+    "/images/WhatsApp-Image-2025-09-11-at-17.46.48-1.webp",
+    "/images/WhatsApp-Image-2025-09-11-at-17.13.40-1.webp",
+    "/images/WhatsApp-Image-2025-09-11-at-17.12.44-1.webp"
+  ]
+}

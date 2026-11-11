@@ -1,0 +1,32 @@
+{
+  "tipo": "depoimentos",
+  "eyebrow": "Depoimentos",
+  "titulo": "O que nossos clientes dizem",
+  "itens": [
+    {
+      "texto": "Confiança total na Teslla. Eles garantem a integridade dos nossos produtos sensíveis com tecnologia de ponta e processos rigorosos.",
+      "nome": "Ana Paula Costa",
+      "local": "Curitiba/PR"
+    },
+    {
+      "texto": "A Teslla é nossa parceira estratégica. Eles entendem as necessidades específicas do setor farmacêutico e entregam resultados excepcionais.",
+      "nome": "Fernando Oliveira",
+      "local": "Salvador/BA"
+    },
+    {
+      "texto": "A Teslla transformou nossa logística farmacêutica. A telemetria 24/7 nos dá tranquilidade total e os relatórios são impecáveis para auditoria.",
+      "nome": "Carlos Eduardo Silva",
+      "local": "São Paulo/SP"
+    },
+    {
+      "texto": "Trabalho com a Teslla há 3 anos. Eles entregam biológicos sem perder a cadeia de frio e sempre com documentação completa.",
+      "nome": "Marina Santos",
+      "local": "Rio de Janeiro/RJ"
+    },
+    {
+      "texto": "Excelente serviço de transporte farmacêutico. Monitoramento em tempo real e equipe sempre disponível para qualquer emergência.",
+      "nome": "Roberto Fernandes",
+      "local": "Belo Horizonte/MG"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "titulo": "Contato",
+  "slug": "contato",
+  "seo": {
+    "title": "Contato | Teslla Logística",
+    "description": "Fale com a Teslla Logística: (11) 2389-3028, (11) 2949-5812 e atendimento emergencial 24h pelo WhatsApp. R. Osaka, 1143/1145, Jardim Japão, São Paulo.",
+    "ogImage": "/images/Terrestre-1.webp"
+  },
+  "hero": {
+    "fundo": "/images/Terrestre-1.webp"
+  },
+  "secoes": [
+    {
+      "tipo": "canais-contato"
+    },
+    {
+      "tipo": "form-atendimento",
+      "titulo": "Fale com um Especialista"
+    },
+    {
+      "tipo": "mapa"
+    }
+  ]
+}

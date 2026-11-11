@@ -1,0 +1,83 @@
+{
+  "titulo": "Transporte de Medicamentos",
+  "slug": "transporte-de-medicamentos",
+  "pai": null,
+  "ordem": 1,
+  "icone": "/images/feature-icon-2.webp",
+  "seo": {
+    "title": "Transporte de Medicamentos - Teslla",
+    "description": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+    "ogImage": "/images/medicamentos.webp"
+  },
+  "resumo": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+  "hero": {
+    "fundo": "/images/medicamentos.webp",
+    "imagem": "/images/thumb-medicamentos.webp"
+  },
+  "headline": "Frota dedicada, monitoramento por pallet e relatórios técnicos por remessa, segurança do início ao fim",
+  "paragrafos": [
+    "Oferecemos transporte especializado para medicamentos, vacinas e produtos biológicos com controle de temperatura contínuo, telemetria em tempo real e procedimentos auditáveis. Projetamos cada operação a partir da ficha técnica do produto para reduzir perdas, garantir conformidade e entregar previsibilidade operacional."
+  ],
+  "citacao": "Trabalhamos com sensores de temperatura, telemetria 24/7, registros por remessa e planos de contingência prontos para acionamento imediato.",
+  "paragrafosApos": [
+    "A transportadora que você escolhe faz a diferença entre uma entrega segura e uma perda de lote. Nossa operação de transporte de medicamentos combina engenharia operacional, frota refrigerada dedicada e monitoramento por pallet para manter a integridade dos seus produtos durante todo o ciclo: coleta, trânsito e entrega.",
+    "Cada envio passa por uma análise técnica que define embalagem, embalagem de proteção térmica, rotas homologadas e janelas de entrega. Ao final da operação, entregamos um relatório técnico em PDF com a trilha de temperatura, eventos e evidências operacionais — documento disponível para auditoria e compliance regulatório. Se desejar, realizamos um envio piloto para validação antes da homologação em escala."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/service-details-icon-1.webp",
+      "texto": "Menos perdas por variação de temperatura."
+    },
+    {
+      "icone": "/images/service-details-icon-3.webp",
+      "texto": "Previsibilidade de operação e janelas de entrega."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Vocês fazem transporte de vacinas e biológicos?",
+      "resposta": "Sim — operamos com protocolos específicos de embalagem, cadeia de custódia e validação de temperatura"
+    },
+    {
+      "pergunta": "Vocês entregam relatórios de temperatura?",
+      "resposta": "Sim — cada remessa recebe um relatório PDF com a trilha de temperatura e eventos"
+    },
+    {
+      "pergunta": "O que acontece em caso de desvio térmico?",
+      "resposta": "Ativamos o plano de contingência (alerta, veículo reserva, transferência controlada) e registramos todas as ações no relatório."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": [
+    {
+      "tipo": "compartilhado",
+      "id": "infraestrutura"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "logos"
+    }
+  ],
+  "secoesDepoisFaq": [
+    {
+      "tipo": "grid-solucoes",
+      "eyebrow": "Confira",
+      "titulo": "Nossas Soluções Especializadas",
+      "filhosDe": "transporte-de-medicamentos",
+      "variante": "circulo",
+      "layout": "centro"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "cta-medicamentos"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "por-que-nos"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "impulsione"
+    }
+  ]
+}

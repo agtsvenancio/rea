@@ -1,0 +1,61 @@
+{
+  "nome": "Teslla Logística",
+  "url": "https://tesllalogistica.com.br",
+  "tagline": "Sua logística com eficiência em todos os cantos do Brasil.",
+  "logo": "/images/logo.webp",
+  "logoRodape": "/images/logo.webp",
+  "telefones": [
+    { "numero": "(11) 2389-3028", "href": "tel:+551123893028" },
+    { "numero": "(11) 2949-5812", "href": "tel:+551129495812" }
+  ],
+  "whatsapp": {
+    "comercial": "5511934909698",
+    "emergencial": "5511965778480",
+    "mensagem": "Olá! Gostaria de tirar algumas dúvidas! (Mensagem enviada do site)",
+    "rotuloEmergencial": "Atendimento Emergencial 24h"
+  },
+  "endereco": "R. Osaka, 1143/1145 - Jardim Japão, São Paulo - SP, 02124-041",
+  "mapaEmbed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58540.611703554016!2d-46.573718!3d-23.504136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5fc9340db377%3A0x14820ef18bd542e7!2sTESLLA%20LOGISTICA!5e0!3m2!1spt-BR!2sbr!4v1757359414199!5m2!1spt-BR!2sbr",
+  "redes": [
+    { "nome": "Instagram", "href": "https://www.instagram.com/tesllalogistica/", "icone": "instagram" },
+    { "nome": "LinkedIn", "href": "https://www.linkedin.com/company/tesllalogistica", "icone": "linkedin" }
+  ],
+  "menu": [
+    { "texto": "Home", "href": "/" },
+    { "texto": "Quem Somos", "href": "/quem-somos/" },
+    { "texto": "Soluções", "href": "/solucoes/", "filhos": [
+      { "texto": "Transporte de Medicamentos", "href": "/solucoes/transporte-de-medicamentos/" },
+      { "texto": "Transporte Terrestre", "href": "/solucoes/transporte-terrestre/" },
+      { "texto": "Transporte Aduaneiro", "href": "/solucoes/transporte-aduaneiro/" },
+      { "texto": "Transporte Aéreo", "href": "/solucoes/transporte-aereo/" },
+      { "texto": "Carga Fracionada", "href": "/solucoes/carga-fracionada/" }
+    ] },
+    { "texto": "Blog", "href": "/blog/" },
+    { "texto": "Cotação", "href": "/cotacao/" },
+    { "texto": "Certificações", "href": "/certificacoes/" },
+    { "texto": "Contato", "href": "/contato/" }
+  ],
+  "rodape": [
+    { "titulo": "Institucional", "links": [
+      { "texto": "Quem Somos", "href": "/quem-somos/" },
+      { "texto": "Nossas Soluções", "href": "/solucoes/" },
+      { "texto": "Blog", "href": "/blog/" },
+      { "texto": "Certificações", "href": "/certificacoes/" },
+      { "texto": "Cotação", "href": "/cotacao/" },
+      { "texto": "Contato", "href": "/contato/" }
+    ] },
+    { "titulo": "Nossas Soluções", "links": [
+      { "texto": "Carga Fracionada", "href": "/solucoes/carga-fracionada/" },
+      { "texto": "Transporte Aduaneiro", "href": "/solucoes/transporte-aduaneiro/" },
+      { "texto": "Transporte Aéreo", "href": "/solucoes/transporte-aereo/" },
+      { "texto": "Transporte de Medicamentos", "href": "/solucoes/transporte-de-medicamentos/" },
+      { "texto": "Transporte Terrestre", "href": "/solucoes/transporte-terrestre/" }
+    ] }
+  ],
+  "copyright": "Teslla Logística © {ano} Todos os direitos reservados.",
+  "formularios": {
+    "emailEndpoint": "/api/enviar.php",
+    "setores": ["Vendas", "Transporte de Medicamentos", "Financeiro", "Operacional", "Outros"]
+  },
+  "gtm": ["GTM-PHQ8NVT9", "GTM-W4W69TSB"]
+}

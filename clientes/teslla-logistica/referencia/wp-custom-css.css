@@ -1,0 +1,25 @@
+.outports-items.items-2 .outports-item .outports-info p, .video-box .video-content .section-heading p{max-width: none;}
+.details-list-wrap .service-details-list li:hover a, .details-list-wrap .service-details-list li.active-menu a{color: var(--lt-color-theme-primary);}
+.primary-header-inner .header-menu-wrap  li.current-solucoes-ancestor a{
+    padding-left: 10px !important;
+    color: var(--lt-color-common-white) !important;
+}.primary-header-inner .header-menu-wrap  li.current-solucoes-ancestor{
+    background-color: var(--lt-color-theme-primary);
+}
+.primary-header-inner .header-menu-wrap li.current-solucoes-ancestor a:before{width: 100%;}
+
+.service-section-4 .item-personalizado{}
+.service-section-4 .item-personalizado .service-item-4{}
+.service-section-4 .item-personalizado .service-item-4 .title{position: relative;
+    color: var(--lt-color-heading-primary);
+    bottom: auto;
+    transform: none;
+    left: 0;font-size: 20px;}
+.service-section-4 .item-personalizado .service-item-4 .service-img{height: auto;}
+.service-section-4 .item-personalizado .service-item-4 .service-img .overlay{display:none;}
+.service-section-4 .item-personalizado .service-item-4 .service-img .hover-overlay{display:none;}
+.service-section-4 .item-personalizado .service-item-4 .service-img img{    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: table;}

@@ -1,0 +1,155 @@
+{
+  "titulo": "Home",
+  "slug": "home",
+  "seo": {
+    "title": "Teslla Logística | Transporte de Medicamentos e Cargas Sensíveis",
+    "description": "Transporte de medicamentos, vacinas e cargas sensíveis com frota refrigerada, telemetria por pallet e relatórios para auditoria. Atendimento 24h em São Paulo e todo o Brasil.",
+    "ogImage": "/images/Banner-Home-1.webp"
+  },
+  "hero": null,
+  "secoes": [
+    {
+      "tipo": "hero-slider",
+      "slides": [
+        {
+          "imagem": "/images/Banner-Home-1.webp",
+          "href": "/solucoes/transporte-de-medicamentos/",
+          "alt": "Transporte de Medicamentos e Soluções em Armazenagem"
+        },
+        {
+          "imagem": "/images/Banner-Home-2.webp",
+          "href": "/solucoes/transporte-de-medicamentos/",
+          "alt": "Transporte de Medicamentos e Soluções em Armazenagem"
+        },
+        {
+          "imagem": "/images/Banner-Home-3.webp",
+          "href": "/solucoes/transporte-de-medicamentos/",
+          "alt": "Transporte de Medicamentos e Soluções em Armazenagem"
+        }
+      ]
+    },
+    {
+      "tipo": "grid-solucoes",
+      "eyebrow": "Confira",
+      "titulo": "Nossas Soluções Especializadas",
+      "filhosDe": "transporte-de-medicamentos",
+      "variante": "circulo",
+      "layout": "titulo-lateral"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "impulsione"
+    },
+    {
+      "tipo": "contadores",
+      "itens": [
+        {
+          "valor": "25 K",
+          "rotulo": "remessas entregues",
+          "icone": "/images/counter-1.webp"
+        },
+        {
+          "valor": "300 +",
+          "rotulo": "clientes atendidos",
+          "icone": "/images/counter-2.webp"
+        },
+        {
+          "valor": "500 +",
+          "rotulo": "clientes satisfeitos",
+          "icone": "/images/counter-3.webp"
+        },
+        {
+          "valor": "5 M",
+          "rotulo": "de km rodados anualmente",
+          "icone": "/images/counter-4.webp"
+        }
+      ]
+    },
+    {
+      "tipo": "passos",
+      "eyebrow": "Rápido, auditável e sem surpresas",
+      "titulo": "4 Passos para transporte farmacêutico seguro",
+      "video": "/videos/solicite-um-atendimento.mp4",
+      "itens": [
+        {
+          "titulo": "Envie ficha técnica com detalhes",
+          "texto": "temperatura exigida, volume e janelas de coleta. Quanto mais detalhe, mais precisa a proposta",
+          "icone": "/images/process-icon-1.webp"
+        },
+        {
+          "titulo": "Validação e plano técnico",
+          "texto": "Nosso operacional define embalagem, roteirização e plano de contingência. Entregamos checklist de confirmação",
+          "icone": "/images/process-icon-2.webp"
+        },
+        {
+          "titulo": "Coleta com frota dedicada",
+          "texto": "Alocamos veículo refrigerado com telemetria por pallet e equipe treinada para manuseio especializado.",
+          "icone": "/images/process-icon-3.webp"
+        },
+        {
+          "titulo": "Monitoramento e relatório por remessa",
+          "texto": "Monitoramento 24/7; entregamos relatório PDF com trilha de temperatura para auditoria",
+          "icone": "/images/process-icon-4.webp"
+        }
+      ]
+    },
+    {
+      "tipo": "form-atendimento",
+      "eyebrow": "Atendimento",
+      "titulo": "Solicite um Atendimento",
+      "texto": "Entre em contato conosco para uma consulta personalizada sobre suas necessidades de transporte farmacêutico.",
+      "imagem": "/images/truck-run.webp"
+    },
+    {
+      "tipo": "faq",
+      "eyebrow": "FAQ",
+      "titulo": "Perguntas Frequentes",
+      "texto": "Somos especialistas em logística farmacêutica e operações sensíveis. Respondemos as dúvidas mais comuns sobre transporte de medicamentos, cadeia de frio, relatórios e operações especiais. Se precisar de uma resposta técnica personalizada, clique em Fale com nossos Especialistas.",
+      "itens": [
+        {
+          "pergunta": "Vocês transportam vacinas e biológicos?",
+          "resposta": "Sim, operamos com operação dedicada para biológicos e vacinas. Temos processos específicos para cargas biológicas e vacinas, incluindo embalagens validadas, janelas de temperatura, cadeia de custódia e pessoal treinado. Trabalhamos com monitoramento por pallet, relatórios por remessa e planos de contingência para minimizar qualquer risco de ruptura de temperatura."
+        },
+        {
+          "pergunta": "Como vocês garantem o controle da temperatura durante todo o trajeto?",
+          "resposta": "Utilizamos telemetria 24/7 com sensores por pallet e alertas automáticos. Cada veículo e, quando necessário, cada pallet é monitorado em tempo real via telemetria. Os dados ficam registrados por remessa e geramos relatórios PDF com trilha de temperatura. Em desvio, o sistema aciona alertas e aplicamos o plano de contingência (veículo reserva, rota alternativa, transferência controlada), com registro completo do evento."
+        },
+        {
+          "pergunta": "Vocês emitem relatórios e documentação para auditoria?",
+          "resposta": "Sim, emitimos relatórios por remessa e documentação técnica completa. Entregamos logs de telemetria, formulários de conferência, comprovantes de custódia e relatórios analíticos por lote, prontos para auditoria. Podemos também disponibilizar pacotes de documentos em formato eletrônico e integrável ao seu sistema mediante acordo de confidencialidade, se necessário."
+        },
+        {
+          "pergunta": "O que acontece em caso de falha na refrigeração?",
+          "resposta": "Ao identificar desvio, acionamos nossa resposta imediata: comunicação ao cliente, tentativa de correção in loco (quando aplicável), ativação do veículo reserva e isolamento do produto. Todos os passos são documentados e um relatório final é enviado ao cliente com medidas corretivas e recomendações."
+        }
+      ],
+      "botao": {
+        "texto": "Fale com um Especialista",
+        "href": "whatsapp"
+      },
+      "fundo": "branco"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "por-que-nos"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "depoimentos"
+    },
+    {
+      "tipo": "blog",
+      "eyebrow": "Blog",
+      "titulo": "Últimas Notícias e Artigos",
+      "quantidade": 3
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "infraestrutura"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "logos"
+    }
+  ]
+}

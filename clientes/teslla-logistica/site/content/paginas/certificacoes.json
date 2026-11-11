@@ -1,0 +1,62 @@
+{
+  "titulo": "Certificações",
+  "slug": "certificacoes",
+  "seo": {
+    "title": "Certificações | Teslla Logística",
+    "description": "Certificações e qualificações da Teslla Logística: compromisso com qualidade, ética e expertise técnica no transporte de medicamentos.",
+    "ogImage": "/images/especialistas-em-logistica-farmaceutica-scaled.webp"
+  },
+  "hero": {
+    "fundo": "/images/banner-quem-somos.webp"
+  },
+  "secoes": [
+    {
+      "tipo": "certificados",
+      "eyebrow": "Compromisso com a Excelência e a Qualidade",
+      "titulo": "Certificações e Qualificações",
+      "texto": "Na Teslla Logística, acreditamos que a busca contínua pelo conhecimento e pela excelência é fundamental para entregar os melhores resultados aos nossos clientes e parceiros. Nossas certificações são um testemunho do nosso compromisso com os mais altos padrões de qualidade, ética e expertise técnica.",
+      "imagens": [
+        "/images/certificado-05.webp",
+        "/images/certificado-06.webp",
+        "/images/certificado-01.webp",
+        "/images/certificado-02.webp",
+        "/images/certificado-03.webp"
+      ]
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "por-que-nos"
+    },
+    {
+      "tipo": "grid-solucoes",
+      "eyebrow": "Confira",
+      "titulo": "Nossas Soluções Especializadas",
+      "variante": "circulo",
+      "layout": "centro",
+      "itens": [
+        "transporte-de-insumos-farmaceuticos",
+        "transporte-de-dermo-cosmeticos",
+        "transporte-de-medicamentos-comuns",
+        "transporte-de-vacinas",
+        "transporte-de-correlatos"
+      ]
+    },
+    {
+      "tipo": "cta-inline",
+      "eyebrow": "Frota Dedicada",
+      "titulo": "Entregamos soluções prontas para reduzir perdas e acelerar distribuição de medicamentos.",
+      "botao": {
+        "texto": "Conheça nossas Soluções",
+        "href": "/solucoes/transporte-de-medicamentos/"
+      }
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "infraestrutura"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "impulsione"
+    }
+  ]
+}

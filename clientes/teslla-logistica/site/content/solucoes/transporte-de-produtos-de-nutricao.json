@@ -1,0 +1,72 @@
+{
+  "titulo": "Transporte de Produtos de Nutrição",
+  "slug": "transporte-de-produtos-de-nutricao",
+  "pai": "transporte-de-medicamentos",
+  "ordem": 10,
+  "icone": "/images/Nutricao.webp",
+  "seo": {
+    "title": "Transporte de Produtos de Nutrição - Teslla",
+    "description": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+    "ogImage": "/images/capa.webp"
+  },
+  "resumo": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+  "hero": {
+    "fundo": "/images/capa.webp",
+    "imagem": "/images/NUTRICAO-PARENTERAL.webp"
+  },
+  "headline": "Logística sob medida, controle de condições e rastreamento ativo: excelência no transporte de produtos de nutrição",
+  "paragrafos": [
+    "Oferecemos soluções completas para o transporte de produtos de nutrição, incluindo suplementos alimentares, fórmulas nutricionais, shakes, alimentos funcionais, barras energéticas e produtos para dietas especiais. Nossa operação assegura a movimentação correta e protegida desses itens, respeitando todas as normas de segurança e qualidade até a entrega ao cliente final."
+  ],
+  "citacao": "Atuamos com frota climatizada, rastreamento em tempo real, registros detalhados de cada remessa e protocolos para eventuais ocorrências.",
+  "paragrafosApos": [
+    "O transporte de produtos de nutrição demanda cuidados específicos para evitar exposição inadequada ao calor, umidade ou luz, fatores que podem afetar a eficácia e a validade dos itens. Realizamos análise técnica de cada carga, selecionamos embalagens protetoras e traçamos rotas otimizadas para garantir que os produtos cheguem intactos ao destino.",
+    "Após a entrega, fornecemos relatórios completos com o histórico de condições ambientais, checklist de integridade dos volumes e documentação digital de toda a operação — facilitando processos de auditoria, rastreamento e controle de estoque.",
+    "Também disponibilizamos envio-piloto para validação dos processos logísticos antes de operações em grande escala, oferecendo segurança para indústrias, distribuidores, lojas especializadas e academias."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/about-icon-5.webp",
+      "texto": "Rastreamento detalhado, transparência e pontualidade em cada entrega."
+    },
+    {
+      "icone": "/images/outsport-icon-1.webp",
+      "texto": "Preservação total das propriedades nutricionais e qualidade dos produtos."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Vocês fazem transporte de vacinas e biológicos?",
+      "resposta": "Sim — operamos com protocolos específicos de embalagem, cadeia de custódia e validação de temperatura"
+    },
+    {
+      "pergunta": "Vocês entregam relatórios de temperatura?",
+      "resposta": "Sim — cada remessa recebe um relatório PDF com a trilha de temperatura e eventos"
+    },
+    {
+      "pergunta": "O que acontece em caso de desvio térmico?",
+      "resposta": "Ativamos o plano de contingência (alerta, veículo reserva, transferência controlada) e registramos todas as ações no relatório."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": [
+    {
+      "tipo": "compartilhado",
+      "id": "por-que-nos"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "logos"
+    }
+  ],
+  "secoesDepoisFaq": [
+    {
+      "tipo": "compartilhado",
+      "id": "estrutura-operacional"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "impulsione"
+    }
+  ]
+}

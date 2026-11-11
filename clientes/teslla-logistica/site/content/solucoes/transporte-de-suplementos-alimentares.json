@@ -1,0 +1,72 @@
+{
+  "titulo": "Transporte de Suplementos Alimentares",
+  "slug": "transporte-de-suplementos-alimentares",
+  "pai": "transporte-de-medicamentos",
+  "ordem": 3,
+  "icone": "/images/Suplementos-Alimentares.webp",
+  "seo": {
+    "title": "Transporte de Suplementos Alimentares - Teslla",
+    "description": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+    "ogImage": "/images/capa.webp"
+  },
+  "resumo": "Transporte refrigerado com telemetria por pallet e controle auditável.",
+  "hero": {
+    "fundo": "/images/capa.webp",
+    "imagem": "/images/armazem-de-farmacia-scaled.webp"
+  },
+  "headline": "Frota especializada, monitoramento contínuo e relatórios técnicos por remessa: segurança total no transporte de suplementos alimentares",
+  "paragrafos": [
+    "Oferecemos transporte dedicado para suplementos alimentares, nutracêuticos e produtos de saúde, com controle rigoroso de temperatura, monitoramento em tempo real e processos totalmente auditáveis. Cada operação é planejada conforme as características dos suplementos para evitar perdas, garantir conformidade e entregar previsibilidade na distribuição."
+  ],
+  "citacao": "Trabalhamos com sensores de temperatura, rastreamento 24/7, registros detalhados por remessa e planos de contingência prontos para qualquer situação.",
+  "paragrafosApos": [
+    "Escolher a transportadora certa faz toda a diferença para preservar a integridade dos suplementos alimentares ao longo da cadeia logística. Nossa operação une engenharia especializada, frota climatizada exclusiva e monitoramento inteligente para assegurar a qualidade dos produtos em todas as etapas: coleta, armazenamento, transporte e entrega.",
+    "Cada envio passa por uma análise técnica detalhada, que determina o tipo de embalagem, a proteção térmica, rotas homologadas e as melhores janelas de entrega. Durante toda a operação, nossos sistemas monitoram automaticamente a temperatura, gerando relatórios técnicos completos em PDF, com toda a trilha de temperatura e eventos registrados — pronto para auditoria e compliance regulatório.",
+    "Se necessário, realizamos envios-piloto para validar cada etapa antes da homologação em escala, garantindo a máxima segurança para seus suplementos alimentares."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/about-icon-5.webp",
+      "texto": "Previsibilidade total na operação e nas entregas."
+    },
+    {
+      "icone": "/images/service-details-icon-1.webp",
+      "texto": "Menos perdas por variações de temperatura."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Vocês fazem transporte de vacinas e biológicos?",
+      "resposta": "Sim — operamos com protocolos específicos de embalagem, cadeia de custódia e validação de temperatura"
+    },
+    {
+      "pergunta": "Vocês entregam relatórios de temperatura?",
+      "resposta": "Sim — cada remessa recebe um relatório PDF com a trilha de temperatura e eventos"
+    },
+    {
+      "pergunta": "O que acontece em caso de desvio térmico?",
+      "resposta": "Ativamos o plano de contingência (alerta, veículo reserva, transferência controlada) e registramos todas as ações no relatório."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": [
+    {
+      "tipo": "compartilhado",
+      "id": "por-que-nos"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "logos"
+    }
+  ],
+  "secoesDepoisFaq": [
+    {
+      "tipo": "compartilhado",
+      "id": "estrutura-operacional"
+    },
+    {
+      "tipo": "compartilhado",
+      "id": "impulsione"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+# Deploy automático na Hostinger a cada push na branch main.
+# Uso: copie este arquivo para .github/workflows/deploy.yml no repositório do site
+# e cadastre os secrets FTP_SERVIDOR, FTP_USUARIO e FTP_SENHA (hPanel > Arquivos > Contas FTP).
+name: Deploy Hostinger
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: clientes/teslla-logistica/site   # ajuste se o site ficar na raiz do repositório
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: clientes/teslla-logistica/site/package-lock.json
+      - run: npm ci
+      - run: npm run build
+      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVIDOR }}
+          username: ${{ secrets.FTP_USUARIO }}
+          password: ${{ secrets.FTP_SENHA }}
+          local-dir: clientes/teslla-logistica/site/out/
+          server-dir: public_html/

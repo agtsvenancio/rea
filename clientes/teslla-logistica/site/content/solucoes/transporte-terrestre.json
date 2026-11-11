@@ -1,0 +1,51 @@
+{
+  "titulo": "Transporte Terrestre",
+  "slug": "transporte-terrestre",
+  "pai": null,
+  "ordem": 2,
+  "icone": "/images/feature-icon-2.webp",
+  "seo": {
+    "title": "Transporte Terrestre - Teslla",
+    "description": "Transporte rodoviário completo para cargas gerais e sensíveis.",
+    "ogImage": "/images/Terrestre-1.webp"
+  },
+  "resumo": "Transporte rodoviário completo para cargas gerais e sensíveis.",
+  "hero": {
+    "fundo": "/images/Terrestre-1.webp",
+    "imagem": "/images/thumb-terrestre.webp"
+  },
+  "headline": "Frota dedicada, rotas homologadas e operação com contingência para cargas sensíveis e necessidades críticas",
+  "paragrafos": [
+    "Oferecemos transporte rodoviário completo para cargas gerais e sensíveis, combinando frota própria, telemetria e procedimentos operacionais que garantem integridade, pontualidade e segurança desde a coleta até a entrega final."
+  ],
+  "citacao": "Alocamos veículos dedicados quando necessário, consolidamos cargas fracionadas com controle por lote e executamos operações de alta complexidade",
+  "paragrafosApos": [
+    "Cada fluxo operacional recebe planejamento prévio: definição de embalagem, roteirização com janelas de entrega, monitoramento em tempo real e plano de contingência. Para remessas sensíveis entregamos relatórios operacionais ao final do trajeto; para cargas fracionadas e projetos contínuos oferecemos SLAs acordados e visibilidade constante via nossa plataforma de rastreio."
+  ],
+  "destaques": [
+    {
+      "icone": "/images/service-details-icon-1.webp",
+      "texto": "Monitoramento e rastreio em tempo real."
+    },
+    {
+      "icone": "/images/service-details-icon-3.webp",
+      "texto": "Frota com opções dedicadas e reefrigeradas."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Como funciona o transporte de medicamentos por vocês?",
+      "resposta": "Realizamos planejamento técnico, embarque em veículos preparados, monitoramento contínuo e emissão de relatório por remessa"
+    },
+    {
+      "pergunta": "Posso solicitar envio emergencial fora do horário comercial?",
+      "resposta": "Sim — oferecemos serviço Hot Line 24/7 para demandas críticas com priorização de recursos"
+    },
+    {
+      "pergunta": "Vocês conseguem consolidar cargas fracionadas mantendo rastreabilidade por cliente?",
+      "resposta": "Sim — cada lote é etiquetado e acompanhado em sistema, com registro de temperatura quando aplicável."
+    }
+  ],
+  "faqImagem": "/images/Perguntas-frequentes-1-scaled.webp",
+  "secoesExtras": []
+}
