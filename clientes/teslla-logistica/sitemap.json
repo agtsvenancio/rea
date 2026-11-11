@@ -1,0 +1,174 @@
+{
+  "base": "https://tesllalogistica.com.br",
+  "pages": [
+    {
+      "id": 9,
+      "title": "Home",
+      "path": "/",
+      "template": "T1-home"
+    },
+    {
+      "id": 12,
+      "title": "Quem Somos",
+      "path": "/quem-somos/",
+      "template": "T2-institucional"
+    },
+    {
+      "id": 358,
+      "title": "Certificações",
+      "path": "/certificacoes/",
+      "template": "T2-institucional"
+    },
+    {
+      "id": 262,
+      "title": "Soluções",
+      "path": "/solucoes/",
+      "template": "T3-hub-solucoes"
+    },
+    {
+      "id": 16,
+      "title": "Blog",
+      "path": "/blog/",
+      "template": "T6-blog-lista"
+    },
+    {
+      "id": 353,
+      "title": "Cotação",
+      "path": "/cotacao/",
+      "template": "T7-cotacao"
+    },
+    {
+      "id": 18,
+      "title": "Contato",
+      "path": "/contato/",
+      "template": "T7-contato"
+    },
+    {
+      "id": 2,
+      "title": "Sample Page",
+      "path": "/sample-page/",
+      "template": "remover"
+    }
+  ],
+  "solucoes": [
+    {
+      "id": 264,
+      "title": "Transporte de Medicamentos",
+      "path": "/solucoes/transporte-de-medicamentos/",
+      "template": "T4-solucao (estendido)"
+    },
+    {
+      "title": "Transporte Terrestre",
+      "path": "/solucoes/transporte-terrestre/",
+      "template": "T4-solucao"
+    },
+    {
+      "title": "Transporte Aduaneiro",
+      "path": "/solucoes/transporte-aduaneiro/",
+      "template": "T4-solucao"
+    },
+    {
+      "title": "Transporte Aéreo",
+      "path": "/solucoes/transporte-aereo/",
+      "template": "T4-solucao"
+    },
+    {
+      "title": "Carga Fracionada",
+      "path": "/solucoes/carga-fracionada/",
+      "template": "T4-solucao"
+    },
+    {
+      "slug": "transporte-de-produtos-para-saude",
+      "path": "/solucoes/transporte-de-medicamentos/transporte-de-produtos-para-saude/",
+      "parent": 264,
+      "template": "T5-sub-solucao",
+      "id": 484
+    },
+    {
+      "slug": "transporte-de-saneantes",
+      "path": "/solucoes/transporte-de-medicamentos/transporte-de-saneantes/",
+      "parent": 264,
+      "template": "T5-sub-solucao"
+    },
+    {
+      "slug": "transporte-de-suplementos-alimentares",
+      "path": "/solucoes/transporte-de-medicamentos/transporte-de-suplementos-alimentares/",
+      "parent": 264,
+      "template": "T5-sub-solucao"
+    },
+    {
+      "slug": "transporte-de-vacinas",
+      "path": "/solucoes/transporte-de-medicamentos/transporte-de-vacinas/",
+      "parent": 264,
+      "template": "T5-sub-solucao"
+    },
+    {
+      "slug": "transporte-de-correlatos",
+      "path": "/solucoes/transporte-de-medicamentos/transporte-de-correlatos/",
+      "parent": 264,
+      "template": "T5-sub-solucao",
+      "id": 511
+    },
+    {
+      "slug": "transporte-de-dermo-cosmeticos",
+      "path": "/solucoes/transporte-de-medicamentos/transporte-de-dermo-cosmeticos/",
+      "parent": 264,
+      "template": "T5-sub-solucao",
+      "id": 508
+    },
+    {
+      "slug": "transporte-de-insumos-farmaceuticos",
+      "path": "/solucoes/transporte-de-medicamentos/transporte-de-insumos-farmaceuticos/",
+      "parent": 264,
+      "template": "T5-sub-solucao",
+      "id": 501
+    },
+    {
+      "slug": "transporte-de-medicamentos-comuns",
+      "path": "/solucoes/transporte-de-medicamentos/transporte-de-medicamentos-comuns/",
+      "parent": 264,
+      "template": "T5-sub-solucao",
+      "id": 499
+    },
+    {
+      "slug": "transporte-de-medicamentos-de-controle-especial",
+      "path": "/solucoes/transporte-de-medicamentos/transporte-de-medicamentos-de-controle-especial/",
+      "parent": 264,
+      "template": "T5-sub-solucao",
+      "id": 489
+    },
+    {
+      "slug": "transporte-de-produtos-de-nutricao",
+      "path": "/solucoes/transporte-de-medicamentos/transporte-de-produtos-de-nutricao/",
+      "parent": 264,
+      "template": "T5-sub-solucao",
+      "id": 537
+    }
+  ],
+  "posts": [
+    {
+      "id": 349,
+      "date": "2025-09-10",
+      "path": "/noticias/aereo-expresso-transporte-rapido-para-cargas-urgentes/",
+      "category": "Notícias"
+    },
+    {
+      "id": 344,
+      "date": "2025-09-09",
+      "path": "/noticias/motofrete-e-coletas-expressas-agilidade-e-seguranca-no-atendimento-urbano/",
+      "category": "Notícias"
+    },
+    {
+      "id": 341,
+      "date": "2025-09-09",
+      "path": "/noticias/conheca-o-novo-site-da-teslla-mais-moderno-agil-e-feito-para-voce/",
+      "category": "Notícias"
+    },
+    {
+      "id": 338,
+      "date": "2025-09-09",
+      "path": "/noticias/distribuicao-nacional-transporte-rapido-e-seguro-para-todo-o-brasil/",
+      "category": "Notícias"
+    }
+  ]
+}
