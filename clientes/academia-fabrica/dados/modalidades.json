@@ -1,0 +1,550 @@
+[
+  {
+    "slug": "musculacao",
+    "nome": "Musculação",
+    "grupo": "forca",
+    "resumo": "Treine com liberdade em uma estrutura moderna e completa.",
+    "descricao": "A base de qualquer objetivo: emagrecer, ganhar massa ou manter a saúde. Na Fábrica você treina com equipamentos modernos, ambiente climatizado e professores qualificados acompanhando seu treino, sem restrição de horários nos planos principais.",
+    "beneficios": [
+      "Ganho de força e massa muscular",
+      "Acelera o metabolismo",
+      "Fortalece ossos e articulações",
+      "Treino adaptável a qualquer nível"
+    ],
+    "destaques": [
+      "Mais de 1.200 m² de área de musculação",
+      "Mais de 200 máquinas e equipamentos de força",
+      "Mais de 40 equipamentos de cardio",
+      "Pista exclusiva para passada",
+      "Área de glúteos com equipamentos específicos"
+    ],
+    "intensidade": 2,
+    "publico": "adulto",
+    "objetivos": [
+      "massa",
+      "emagrecer",
+      "condicionamento",
+      "comecar"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-musculacao-050.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-musculacao-050-thumb.webp"
+  },
+  {
+    "slug": "bodypump",
+    "nome": "BodyPump",
+    "grupo": "forca",
+    "resumo": "Musculação dinâmica com barra ao ritmo de música.",
+    "descricao": "Treino de força em grupo com barra e anilhas, coreografado ao som de música. Trabalha todos os grandes grupos musculares em uma aula de alta energia, com carga ajustável ao seu nível.",
+    "beneficios": [
+      "Tonificação de corpo inteiro",
+      "Alto gasto calórico",
+      "Melhora da resistência muscular",
+      "Motivação do treino em grupo"
+    ],
+    "intensidade": 2,
+    "publico": "adulto",
+    "objetivos": [
+      "massa",
+      "emagrecer",
+      "coletivas"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-sala-de-ginastica-bodypump-135.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-de-ginastica-bodypump-135-thumb.webp",
+    "parceria": "Les Mills"
+  },
+  {
+    "slug": "gluteos",
+    "nome": "Glúteos",
+    "grupo": "forca",
+    "resumo": "Foco em tonificação e fortalecimento dos glúteos.",
+    "descricao": "Aula focada no fortalecimento e na tonificação dos glúteos, combinando exercícios com peso do corpo, caneleiras e acessórios. Resultado: mais força, estabilidade e definição.",
+    "beneficios": [
+      "Fortalecimento e definição dos glúteos",
+      "Melhora da postura e estabilidade",
+      "Prevenção de dores lombares",
+      "Complemento perfeito para a musculação"
+    ],
+    "duracao": "45 minutos",
+    "intensidade": 2,
+    "publico": "adulto",
+    "objetivos": [
+      "massa",
+      "coletivas",
+      "emagrecer"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-sala-de-ginastica-gluteos-036.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-de-ginastica-gluteos-036-thumb.webp"
+  },
+  {
+    "slug": "gap",
+    "nome": "GAP",
+    "grupo": "forca",
+    "resumo": "Glúteo, abdômen e pernas em 45 minutos.",
+    "descricao": "GAP significa Glúteo, Abdômen e Pernas: uma aula direta ao ponto que fortalece o trem inferior e o core em 45 minutos de exercícios localizados e funcionais.",
+    "beneficios": [
+      "Tonificação de glúteos, abdômen e pernas",
+      "Fortalecimento do core",
+      "Aula rápida que cabe na rotina",
+      "Melhora da postura"
+    ],
+    "duracao": "45 minutos",
+    "intensidade": 2,
+    "publico": "adulto",
+    "objetivos": [
+      "emagrecer",
+      "coletivas",
+      "massa"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-sala-de-ginastica-gap-035.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-de-ginastica-gap-035-thumb.webp"
+  },
+  {
+    "slug": "abdominal",
+    "nome": "Abdominal",
+    "grupo": "forca",
+    "resumo": "Fortalecimento e definição do abdômen em 15 minutos.",
+    "descricao": "Aula expressa de 15 minutos dedicada ao core: fortalecimento profundo do abdômen com séries variadas. Encaixe antes ou depois do seu treino principal.",
+    "beneficios": [
+      "Core forte e estável",
+      "Definição abdominal",
+      "Melhora da postura",
+      "Rápida: só 15 minutos"
+    ],
+    "duracao": "15 minutos",
+    "intensidade": 2,
+    "publico": "adulto",
+    "objetivos": [
+      "emagrecer",
+      "condicionamento",
+      "coletivas"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-sala-de-ginastica-abdominal-030.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-de-ginastica-abdominal-030-thumb.webp"
+  },
+  {
+    "slug": "cross-training",
+    "nome": "Cross Training",
+    "grupo": "cardio",
+    "resumo": "Treino funcional de alta intensidade com movimentos variados.",
+    "descricao": "Que tal chegar todos os dias na Fábrica e ter um treino novo te esperando? Com movimentos variados como correr, pular, saltar, puxar, agachar, subir e descer, utilizando materiais como bolas, cordas, caixas e barras, cada aula se torna única e desafiadora. Tudo isso na nossa Arena Cross.",
+    "beneficios": [
+      "Ganho de força",
+      "Maior resistência",
+      "Alto gasto calórico",
+      "Melhora coordenação motora e equilíbrio",
+      "Melhora capacidade cardiovascular"
+    ],
+    "intensidade": 3,
+    "publico": "adulto",
+    "objetivos": [
+      "condicionamento",
+      "emagrecer",
+      "massa"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-cross-cross-trainning-147.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-cross-cross-trainning-147-thumb.webp"
+  },
+  {
+    "slug": "hiit",
+    "nome": "HIIT",
+    "grupo": "cardio",
+    "resumo": "Treino intervalado de alta intensidade em 30 minutos.",
+    "descricao": "O treino mais intenso que você já fez! Com apenas 30 minutos de duração, o HIIT oferece uma variedade de exercícios funcionais combinados com diversos materiais como bolas, cordas, caixas e barras.",
+    "beneficios": [
+      "Ganho de força",
+      "Maior resistência",
+      "Máximo gasto calórico em 30 minutos",
+      "Melhora coordenação e equilíbrio",
+      "Melhora capacidade cardiovascular"
+    ],
+    "duracao": "30 minutos",
+    "intensidade": 3,
+    "publico": "adulto",
+    "objetivos": [
+      "emagrecer",
+      "condicionamento"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-cross-hitt-148.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-cross-hitt-148-thumb.webp"
+  },
+  {
+    "slug": "spinning",
+    "nome": "Spinning",
+    "grupo": "cardio",
+    "resumo": "Pedal indoor com música e esquema de luzes.",
+    "descricao": "Atividade aeróbia intensa que simula o pedal ao ar livre, feita em cima de uma bike estática ao som de música e com esquema de luzes. Durante a aula são simuladas diferentes inclinações para trabalhar diferentes músculos do corpo. O Spinning também ajuda a melhorar o foco mental e a interligação corpo-mente.",
+    "beneficios": [
+      "Alto gasto calórico",
+      "Tonifica os membros inferiores",
+      "Melhora condicionamento e capacidade cardiorrespiratória",
+      "Reduz a pressão arterial e melhora o colesterol"
+    ],
+    "intensidade": 3,
+    "publico": "adulto",
+    "objetivos": [
+      "emagrecer",
+      "condicionamento",
+      "coletivas"
+    ],
+    "parceria": "Spinning",
+    "foto": "/assets/img/fabrica-academia-itu-sala-de-bike-spinning-136.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-de-bike-spinning-136-thumb.webp"
+  },
+  {
+    "slug": "bike-indoor",
+    "nome": "Bike Indoor",
+    "grupo": "cardio",
+    "resumo": "Pedal com músicas animadas e mudanças de ritmo.",
+    "descricao": "Aula feita em bicicletas estacionárias, com músicas animadas e mudanças de ritmo durante o treino. Ao longo da aula são trabalhados momentos de velocidade, subida e resistência, sempre respeitando o nível de cada aluno.",
+    "beneficios": [
+      "Melhora o condicionamento físico",
+      "Fortalece pernas e glúteos",
+      "Aumenta a resistência",
+      "Ajuda na queima de calorias"
+    ],
+    "intensidade": 2,
+    "publico": "adulto",
+    "objetivos": [
+      "emagrecer",
+      "condicionamento",
+      "coletivas",
+      "comecar"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-sala-de-bike-bike-indoor-137.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-de-bike-bike-indoor-137-thumb.webp"
+  },
+  {
+    "slug": "corrida-de-rua",
+    "nome": "Corrida de Rua",
+    "grupo": "cardio",
+    "resumo": "Treino ao ar livre pelas ruas de Itu.",
+    "descricao": "Aquele plus a mais de fazer exercício ao ar livre pelas ruas da nossa cidade, com trajetos diferentes a cada treino. Uma excelente aula para ganhar condicionamento físico, melhorar a capacidade cardiorrespiratória e mandar embora os quilinhos indesejados.",
+    "beneficios": [
+      "Melhora a capacidade cardiorrespiratória",
+      "Melhora o colesterol",
+      "Alto gasto calórico",
+      "Treino ao ar livre em grupo"
+    ],
+    "intensidade": 2,
+    "publico": "adulto",
+    "objetivos": [
+      "emagrecer",
+      "condicionamento",
+      "bem-estar"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-externo-corrida-de-rua-png-020.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-externo-corrida-de-rua-png-020-thumb.webp"
+  },
+  {
+    "slug": "powerjump",
+    "nome": "PowerJump",
+    "grupo": "coletivas",
+    "resumo": "Saltos coreografados em mini trampolim.",
+    "descricao": "Aula de saltos coreografados em mini trampolim ao som de música. Diversão garantida com alto gasto calórico e baixo impacto nas articulações.",
+    "beneficios": [
+      "Alto gasto calórico",
+      "Baixo impacto nas articulações",
+      "Fortalece pernas e core",
+      "Melhora o sistema linfático"
+    ],
+    "intensidade": 2,
+    "publico": "adulto",
+    "objetivos": [
+      "emagrecer",
+      "coletivas",
+      "condicionamento"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-sala-de-ginastica-power-jump-044.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-de-ginastica-power-jump-044-thumb.webp",
+    "parceria": "Les Mills"
+  },
+  {
+    "slug": "step",
+    "nome": "Step",
+    "grupo": "coletivas",
+    "resumo": "Exercícios ritmados em plataforma individual.",
+    "descricao": "Aula clássica de exercícios ritmados sobre plataforma individual, coreografada ao som de música. Trabalha pernas, glúteos e condicionamento com muita energia.",
+    "beneficios": [
+      "Fortalece pernas e glúteos",
+      "Melhora coordenação e ritmo",
+      "Gasto calórico elevado",
+      "Melhora capacidade cardiovascular"
+    ],
+    "intensidade": 2,
+    "publico": "adulto",
+    "objetivos": [
+      "emagrecer",
+      "coletivas",
+      "condicionamento"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-sala-de-ginastica-step-138.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-de-ginastica-step-138-thumb.webp"
+  },
+  {
+    "slug": "fit-dance",
+    "nome": "Fit Dance",
+    "grupo": "coletivas",
+    "resumo": "Coreografias do momento, do pop ao funk.",
+    "descricao": "Dance as coreografias do momento, do pop ao funk, em uma aula que mistura diversão e gasto calórico. Você treina sem perceber que está treinando.",
+    "beneficios": [
+      "Gasto calórico dançando",
+      "Melhora coordenação e ritmo",
+      "Reduz o estresse",
+      "Energia do grupo"
+    ],
+    "intensidade": 2,
+    "publico": "adulto",
+    "objetivos": [
+      "emagrecer",
+      "coletivas",
+      "bem-estar",
+      "comecar"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-sala-de-ginastica-fitdance-034.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-de-ginastica-fitdance-034-thumb.webp"
+  },
+  {
+    "slug": "zumba",
+    "nome": "Zumba",
+    "grupo": "coletivas",
+    "resumo": "Dança latina com merengue, salsa e reggaeton.",
+    "descricao": "Aula de dança latina com merengue, salsa e reggaeton. Ritmos contagiantes, coreografias acessíveis e muito suor. Ideal para quem quer se exercitar se divertindo.",
+    "beneficios": [
+      "Alto gasto calórico",
+      "Melhora coordenação motora",
+      "Diversão que gera constância",
+      "Reduz o estresse"
+    ],
+    "intensidade": 2,
+    "publico": "adulto",
+    "objetivos": [
+      "emagrecer",
+      "coletivas",
+      "bem-estar",
+      "comecar"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-sala-de-ginastica-zumba-139.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-de-ginastica-zumba-139-thumb.webp"
+  },
+  {
+    "slug": "ritbox",
+    "nome": "RitBox",
+    "grupo": "coletivas",
+    "resumo": "Treino ritmado com música. Não é dança, é treino.",
+    "descricao": "RitBox é treino ritmado com música, e não aula de dança: agachamentos, polichinelos, socos, chutes e abdominais seguem a batida em formato dinâmico e intenso. Acelera o metabolismo, define o corpo e melhora o fôlego.",
+    "beneficios": [
+      "Gasto calórico intenso",
+      "Alivia o estresse",
+      "Trabalha corpo inteiro",
+      "Sem necessidade de experiência"
+    ],
+    "intensidade": 2,
+    "publico": "adulto",
+    "objetivos": [
+      "emagrecer",
+      "coletivas",
+      "condicionamento"
+    ],
+    "parceria": "RitBox",
+    "foto": "/assets/img/fabrica-academia-itu-sala-de-ginastica-ritbox-141.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-de-ginastica-ritbox-141-thumb.webp"
+  },
+  {
+    "slug": "fitball",
+    "nome": "Fitball",
+    "grupo": "coletivas",
+    "resumo": "Exercícios com bola suíça para equilíbrio e força.",
+    "descricao": "Aula com bola suíça que desafia o equilíbrio e ativa músculos estabilizadores. Fortalecimento de core, postura e consciência corporal em um treino diferente e eficiente.",
+    "beneficios": [
+      "Fortalece o core",
+      "Melhora equilíbrio e postura",
+      "Baixo impacto",
+      "Consciência corporal"
+    ],
+    "intensidade": 1,
+    "publico": "adulto",
+    "objetivos": [
+      "bem-estar",
+      "coletivas",
+      "comecar"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-sala-de-ginastica-fitball-033.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-de-ginastica-fitball-033-thumb.webp"
+  },
+  {
+    "slug": "boxe",
+    "nome": "Boxe",
+    "grupo": "lutas",
+    "resumo": "Socos, esquivas e footwork em parceria com o C.D.L. Itu.",
+    "descricao": "Aprenda socos, esquivas e footwork em aulas para todos os níveis, em parceria com o C.D.L. Itu. Técnica, condicionamento e defesa pessoal em um treino que desafia corpo e mente.",
+    "beneficios": [
+      "Condicionamento físico completo",
+      "Técnica e defesa pessoal",
+      "Alivia o estresse",
+      "Melhora reflexos e coordenação"
+    ],
+    "intensidade": 3,
+    "publico": "adulto",
+    "objetivos": [
+      "lutas",
+      "condicionamento",
+      "emagrecer"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-tatame-boxe-100.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-tatame-boxe-100-thumb.webp",
+    "parceria": "C.D.L. Itu",
+    "observacao": "Para a aula teste, a academia empresta as luvas. Depois que você pegar gosto, o ideal é ter a sua própria."
+  },
+  {
+    "slug": "kickboxing",
+    "nome": "Kickboxing",
+    "grupo": "lutas",
+    "resumo": "Boxe combinado com chutes e joelhadas.",
+    "descricao": "Combinação de boxe com chutes e joelhadas: um treino intenso que desenvolve potência, flexibilidade e condicionamento, com técnica ensinada do zero.",
+    "beneficios": [
+      "Potência e explosão",
+      "Flexibilidade de membros inferiores",
+      "Alto gasto calórico",
+      "Defesa pessoal"
+    ],
+    "intensidade": 3,
+    "publico": "adulto",
+    "objetivos": [
+      "lutas",
+      "condicionamento",
+      "emagrecer"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-tatame-kickboxing-144.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-tatame-kickboxing-144-thumb.webp",
+    "observacao": "Para a aula teste, a academia empresta as luvas. Depois que você pegar gosto, o ideal é ter a sua própria."
+  },
+  {
+    "slug": "jiu-jitsu",
+    "nome": "Jiu-Jítsu",
+    "grupo": "lutas",
+    "resumo": "Arte marcial em parceria com a escola A.O.A.",
+    "descricao": "A arte suave no tatame da Fábrica, em parceria com a escola A.O.A. Técnica, estratégia e disciplina em aulas para iniciantes e graduados.",
+    "beneficios": [
+      "Defesa pessoal real",
+      "Disciplina e foco",
+      "Condicionamento físico completo",
+      "Comunidade e respeito"
+    ],
+    "intensidade": 3,
+    "publico": "adulto",
+    "objetivos": [
+      "lutas",
+      "condicionamento",
+      "bem-estar"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-tatame-jiu-jitsu-146.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-tatame-jiu-jitsu-146-thumb.webp",
+    "parceria": "Escola A.O.A."
+  },
+  {
+    "slug": "hatha-yoga",
+    "nome": "Hatha Yoga",
+    "grupo": "corpo-mente",
+    "resumo": "Posturas, respiração e meditação.",
+    "descricao": "Prática de posturas (ásanas), respiração (pranayama) e meditação para equilibrar corpo e mente. Ideal para complementar treinos intensos e reduzir o estresse do dia a dia.",
+    "beneficios": [
+      "Flexibilidade e mobilidade",
+      "Redução do estresse e ansiedade",
+      "Melhora da respiração e postura",
+      "Equilíbrio corpo-mente"
+    ],
+    "intensidade": 1,
+    "publico": "adulto",
+    "objetivos": [
+      "bem-estar",
+      "comecar"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-sala-zen-yoga-142.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-zen-yoga-142-thumb.webp"
+  },
+  {
+    "slug": "pilates-solo",
+    "nome": "Pilates Solo",
+    "grupo": "corpo-mente",
+    "resumo": "Fortalecimento profundo e melhora postural.",
+    "descricao": "Método de fortalecimento profundo do core e melhora postural, praticado no solo com peso do corpo e acessórios. Controle, precisão e respiração em cada movimento.",
+    "beneficios": [
+      "Core forte e postura alinhada",
+      "Alívio de dores nas costas",
+      "Flexibilidade com controle",
+      "Baixo impacto"
+    ],
+    "intensidade": 1,
+    "publico": "adulto",
+    "objetivos": [
+      "bem-estar",
+      "comecar"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-sala-zen-pilates-081.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-zen-pilates-081-thumb.webp"
+  },
+  {
+    "slug": "alongamento",
+    "nome": "Alongamento",
+    "grupo": "corpo-mente",
+    "resumo": "Flexibilidade, consciência corporal e prevenção de lesões.",
+    "descricao": "Aula dedicada à flexibilidade, consciência corporal e prevenção de lesões. O complemento que faltava para quem treina pesado, ou o começo suave para quem está voltando a se movimentar.",
+    "beneficios": [
+      "Mais flexibilidade e mobilidade",
+      "Prevenção de lesões",
+      "Alívio de tensões musculares",
+      "Recuperação pós-treino"
+    ],
+    "intensidade": 1,
+    "publico": "todos",
+    "objetivos": [
+      "bem-estar",
+      "comecar"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-sala-zen-pilates-153.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-sala-zen-pilates-153-thumb.webp"
+  },
+  {
+    "slug": "judo-kids",
+    "nome": "Judô Kids",
+    "grupo": "kids",
+    "resumo": "Judô para crianças de 5 a 12 anos.",
+    "descricao": "Através de técnicas cuidadosamente ensinadas por nossos professores, os alunos aprendem não apenas os fundamentos do judô, mas também desenvolvem habilidades essenciais para a vida, como disciplina, respeito e autoconfiança. Para crianças de 5 a 12 anos.",
+    "beneficios": [
+      "Melhor coordenação motora",
+      "Consciência corporal",
+      "Capacidade cardiovascular e equilíbrio",
+      "Disciplina, respeito e autoconfiança"
+    ],
+    "intensidade": 2,
+    "publico": "kids",
+    "objetivos": [
+      "comecar",
+      "lutas"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-tatame-jiu-jitsu-102.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-tatame-jiu-jitsu-102-thumb.webp",
+    "fotoGenerica": true
+  },
+  {
+    "slug": "cross-kids",
+    "nome": "Cross Kids",
+    "grupo": "kids",
+    "resumo": "Atividades dinâmicas para crianças de 5 a 12 anos.",
+    "descricao": "Uma aula recheada de atividades dinâmicas e desafiadoras, projetadas para desenvolver habilidades físicas, mentais e emocionais em um ambiente estimulante e seguro. Com exercícios de coordenação, resistência e agilidade, as crianças desenvolvem seu potencial atlético enquanto se divertem. Para crianças de 5 a 12 anos.",
+    "beneficios": [
+      "Coordenação motora e equilíbrio",
+      "Capacidade cardiovascular",
+      "Trabalho em equipe",
+      "Autoconfiança se divertindo"
+    ],
+    "intensidade": 2,
+    "publico": "kids",
+    "objetivos": [
+      "comecar",
+      "condicionamento"
+    ],
+    "foto": "/assets/img/fabrica-academia-itu-cross-kids-127.webp",
+    "fotoThumb": "/assets/thumbs/fabrica-academia-itu-cross-kids-127-thumb.webp"
+  }
+]

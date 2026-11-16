@@ -1,0 +1,193 @@
+dia,inicio,fim,aula,modalidade_slug,sala,professor,nivel,ativo
+segunda,05:00,23:00,Musculação (sala aberta),musculacao,Musculação,Equipe,Todos,sim
+segunda,05:30,,Spinning,spinning,Sala de Bike,,,sim
+segunda,06:00,,Cross Training,cross-training,Arena Cross,,,sim
+segunda,06:15,,Spinning,spinning,Sala de Bike,,,sim
+segunda,07:00,,Cross Training,cross-training,Arena Cross,,,sim
+segunda,07:00,,Kickboxing,kickboxing,Tatame,,,sim
+segunda,07:10,,Fit Dance,fit-dance,Sala de Ginástica,,,sim
+segunda,07:15,,Spinning,spinning,Sala de Bike,,,sim
+segunda,07:30,,Spinning,spinning,Sala de Bike,,,sim
+segunda,08:00,,Cross Training,cross-training,Arena Cross,,,sim
+segunda,08:30,,Alongamento,alongamento,Sala de Yoga,,,sim
+segunda,09:00,,Cross Kids,cross-kids,Arena Cross,,Kids,sim
+segunda,10:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+segunda,10:00,,Jiu-Jítsu,jiu-jitsu,Tatame,,,sim
+segunda,15:00,,Kickboxing,kickboxing,Tatame,,,sim
+segunda,15:00,,Zumba,zumba,Sala de Ginástica,,,sim
+segunda,15:30,,Cross Training,cross-training,Arena Cross,,,sim
+segunda,15:30,,Pilates Solo,pilates-solo,Sala de Yoga,,,sim
+segunda,16:00,,PowerJump,powerjump,Sala de Ginástica,,,sim
+segunda,16:15,,Spinning,spinning,Sala de Bike,,,sim
+segunda,16:30,,Pilates Solo,pilates-solo,Sala de Yoga,,,sim
+segunda,16:30,,RitBox,ritbox,Sala de Ginástica,,,sim
+segunda,17:00,,Step,step,Sala de Ginástica,,,sim
+segunda,17:30,,Alongamento,alongamento,Sala de Yoga,,,sim
+segunda,17:30,,Bike Indoor,bike-indoor,Sala de Bike,,,sim
+segunda,17:30,,Cross Training,cross-training,Arena Cross,,,sim
+segunda,17:30,,Kickboxing,kickboxing,Tatame,,,sim
+segunda,17:30,,Pilates Solo,pilates-solo,Sala de Yoga,,,sim
+segunda,18:00,,Glúteos,gluteos,Sala de Ginástica,,,sim
+segunda,18:15,,Spinning,spinning,Sala de Bike,,,sim
+segunda,18:30,,Cross Training,cross-training,Arena Cross,,,sim
+segunda,18:30,,Pilates Solo,pilates-solo,Sala de Yoga,,,sim
+segunda,18:30,,PowerJump,powerjump,Sala de Ginástica,,,sim
+segunda,18:45,,Jiu-Jítsu,jiu-jitsu,Tatame,,,sim
+segunda,19:15,,BodyPump,bodypump,Sala de Ginástica,,,sim
+segunda,19:15,,Spinning,spinning,Sala de Bike,,,sim
+segunda,19:30,,Cross Training,cross-training,Arena Cross,,,sim
+segunda,19:45,,Fit Dance,fit-dance,Sala de Ginástica,,,sim
+segunda,20:00,,Kickboxing,kickboxing,Tatame,,,sim
+terca,05:00,23:00,Musculação (sala aberta),musculacao,Musculação,Equipe,Todos,sim
+terca,05:30,,Spinning,spinning,Sala de Bike,,,sim
+terca,06:00,,Corrida de Rua,corrida-de-rua,Externo,,,sim
+terca,06:00,,Cross Training,cross-training,Arena Cross,,,sim
+terca,06:15,,Spinning,spinning,Sala de Bike,,,sim
+terca,07:00,,Boxe,boxe,Tatame,,,sim
+terca,07:00,,Cross Training,cross-training,Arena Cross,,,sim
+terca,07:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+terca,07:00,,Step,step,Sala de Ginástica,,,sim
+terca,07:30,,Mobilidade,,Sala de Yoga,,,sim
+terca,07:30,,Spinning,spinning,Sala de Bike,,,sim
+terca,08:00,,Cross Training,cross-training,Arena Cross,,,sim
+terca,08:00,,Glúteos,gluteos,Sala de Ginástica,,,sim
+terca,08:00,,Pilates Solo,pilates-solo,Sala de Yoga,,,sim
+terca,08:30,,Abdominal,abdominal,Sala de Ginástica,,,sim
+terca,09:20,,Judô Kids,judo-kids,Tatame,,Kids,sim
+terca,11:00,,Jiu-Jítsu,jiu-jitsu,Tatame,,,sim
+terca,15:30,,Cross Training,cross-training,Arena Cross,,,sim
+terca,16:00,,GAP,gap,Sala de Ginástica,,,sim
+terca,16:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+terca,16:45,,Abdominal,abdominal,Sala de Ginástica,,,sim
+terca,17:00,,Cross Kids,cross-kids,Arena Cross,,Kids,sim
+terca,17:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+terca,17:00,,PowerJump,powerjump,Sala de Ginástica,,,sim
+terca,17:15,,Spinning,spinning,Sala de Bike,,,sim
+terca,17:30,,RitBox,ritbox,Sala de Ginástica,,,sim
+terca,17:50,,Kickboxing,kickboxing,Tatame,,,sim
+terca,18:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+terca,18:00,,HIIT,hiit,Arena Cross,,,sim
+terca,18:00,,Zumba,zumba,Sala de Ginástica,,,sim
+terca,18:15,,Spinning,spinning,Sala de Bike,,,sim
+terca,18:30,,Cross Training,cross-training,Arena Cross,,,sim
+terca,18:45,,Step,step,Sala de Ginástica,,,sim
+terca,19:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+terca,19:00,,Jiu-Jítsu,jiu-jitsu,Tatame,,,sim
+terca,19:15,,BodyPump,bodypump,Sala de Ginástica,,,sim
+terca,19:15,,Spinning,spinning,Sala de Bike,,,sim
+terca,19:30,,Cross Training,cross-training,Arena Cross,,,sim
+terca,20:00,,PowerJump,powerjump,Sala de Ginástica,,,sim
+terca,20:15,,Boxe,boxe,Tatame,,,sim
+quarta,05:00,23:00,Musculação (sala aberta),musculacao,Musculação,Equipe,Todos,sim
+quarta,05:30,,Spinning,spinning,Sala de Bike,,,sim
+quarta,06:00,,Cross Training,cross-training,Arena Cross,,,sim
+quarta,06:15,,Spinning,spinning,Sala de Bike,,,sim
+quarta,07:00,,Kickboxing,kickboxing,Tatame,,,sim
+quarta,07:10,,Fit Dance,fit-dance,Sala de Ginástica,,,sim
+quarta,07:30,,Spinning,spinning,Sala de Bike,,,sim
+quarta,08:00,,Cross Training,cross-training,Arena Cross,,,sim
+quarta,08:30,,Alongamento,alongamento,Sala de Yoga,,,sim
+quarta,09:00,,Cross Kids,cross-kids,Arena Cross,,Kids,sim
+quarta,10:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+quarta,11:00,,Jiu-Jítsu,jiu-jitsu,Tatame,,,sim
+quarta,15:00,,Kickboxing,kickboxing,Tatame,,,sim
+quarta,15:00,,Zumba,zumba,Sala de Ginástica,,,sim
+quarta,15:30,,Cross Training,cross-training,Arena Cross,,,sim
+quarta,15:30,,Pilates Solo,pilates-solo,Sala de Yoga,,,sim
+quarta,16:00,,PowerJump,powerjump,Sala de Ginástica,,,sim
+quarta,16:15,,Spinning,spinning,Sala de Bike,,,sim
+quarta,16:30,,Pilates Solo,pilates-solo,Sala de Yoga,,,sim
+quarta,16:30,,RitBox,ritbox,Sala de Ginástica,,,sim
+quarta,17:00,,Cross Training,cross-training,Arena Cross,,,sim
+quarta,17:00,,Step,step,Sala de Ginástica,,,sim
+quarta,17:30,,Alongamento,alongamento,Sala de Yoga,,,sim
+quarta,17:30,,Bike Indoor,bike-indoor,Sala de Bike,,,sim
+quarta,17:30,,Kickboxing,kickboxing,Tatame,,,sim
+quarta,17:30,,Pilates Solo,pilates-solo,Sala de Yoga,,,sim
+quarta,18:00,,Cross Training,cross-training,Arena Cross,,,sim
+quarta,18:00,,Glúteos,gluteos,Sala de Ginástica,,,sim
+quarta,18:15,,Spinning,spinning,Sala de Bike,,,sim
+quarta,18:30,,Pilates Solo,pilates-solo,Sala de Yoga,,,sim
+quarta,18:30,,PowerJump,powerjump,Sala de Ginástica,,,sim
+quarta,18:45,,Jiu-Jítsu,jiu-jitsu,Tatame,,,sim
+quarta,19:00,,Cross Training,cross-training,Arena Cross,,,sim
+quarta,19:15,,BodyPump,bodypump,Sala de Ginástica,,,sim
+quarta,19:15,,Spinning,spinning,Sala de Bike,,,sim
+quarta,19:45,,Fit Dance,fit-dance,Sala de Ginástica,,,sim
+quarta,20:00,,Kickboxing,kickboxing,Tatame,,,sim
+quinta,05:00,23:00,Musculação (sala aberta),musculacao,Musculação,Equipe,Todos,sim
+quinta,05:30,,Spinning,spinning,Sala de Bike,,,sim
+quinta,06:00,,Corrida de Rua,corrida-de-rua,Externo,,,sim
+quinta,06:00,,Cross Training,cross-training,Arena Cross,,,sim
+quinta,06:15,,Spinning,spinning,Sala de Bike,,,sim
+quinta,07:00,,Boxe,boxe,Tatame,,,sim
+quinta,07:00,,Cross Training,cross-training,Arena Cross,,,sim
+quinta,07:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+quinta,07:00,,Step,step,Sala de Ginástica,,,sim
+quinta,07:30,,Mobilidade,,Sala de Yoga,,,sim
+quinta,07:30,,Spinning,spinning,Sala de Bike,,,sim
+quinta,08:00,,Cross Training,cross-training,Arena Cross,,,sim
+quinta,08:00,,Glúteos,gluteos,Sala de Ginástica,,,sim
+quinta,08:00,,Pilates Solo,pilates-solo,Sala de Yoga,,,sim
+quinta,08:30,,Abdominal,abdominal,Sala de Ginástica,,,sim
+quinta,09:20,,Judô Kids,judo-kids,Tatame,,Kids,sim
+quinta,11:00,,Jiu-Jítsu,jiu-jitsu,Tatame,,,sim
+quinta,15:30,,Cross Training,cross-training,Arena Cross,,,sim
+quinta,16:00,,GAP,gap,Sala de Ginástica,,,sim
+quinta,16:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+quinta,16:45,,Abdominal,abdominal,Sala de Ginástica,,,sim
+quinta,17:00,,Cross Kids,cross-kids,Arena Cross,,Kids,sim
+quinta,17:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+quinta,17:00,,PowerJump,powerjump,Sala de Ginástica,,,sim
+quinta,17:15,,Spinning,spinning,Sala de Bike,,,sim
+quinta,17:30,,RitBox,ritbox,Sala de Ginástica,,,sim
+quinta,17:50,,Kickboxing,kickboxing,Tatame,,,sim
+quinta,18:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+quinta,18:00,,HIIT,hiit,Arena Cross,,,sim
+quinta,18:00,,Zumba,zumba,Sala de Ginástica,,,sim
+quinta,18:15,,Spinning,spinning,Sala de Bike,,,sim
+quinta,18:30,,Cross Training,cross-training,Arena Cross,,,sim
+quinta,18:45,,Step,step,Sala de Ginástica,,,sim
+quinta,19:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+quinta,19:00,,Jiu-Jítsu,jiu-jitsu,Tatame,,,sim
+quinta,19:15,,BodyPump,bodypump,Sala de Ginástica,,,sim
+quinta,19:15,,Spinning,spinning,Sala de Bike,,,sim
+quinta,19:30,,Cross Training,cross-training,Arena Cross,,,sim
+quinta,20:00,,PowerJump,powerjump,Sala de Ginástica,,,sim
+quinta,20:15,,Boxe,boxe,Tatame,,,sim
+sexta,05:00,22:00,Musculação (sala aberta),musculacao,Musculação,Equipe,Todos,sim
+sexta,06:00,,Cross Training,cross-training,Arena Cross,,,sim
+sexta,06:15,,Spinning,spinning,Sala de Bike,,,sim
+sexta,07:10,,Fit Dance,fit-dance,Sala de Ginástica,,,sim
+sexta,07:30,,Pilates Solo,pilates-solo,Sala de Yoga,,,sim
+sexta,07:30,,Spinning,spinning,Sala de Bike,,,sim
+sexta,08:00,,Cross Training,cross-training,Arena Cross,,,sim
+sexta,10:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+sexta,11:00,,Jiu-Jítsu,jiu-jitsu,Tatame,,,sim
+sexta,15:00,,Kickboxing,kickboxing,Tatame,,,sim
+sexta,15:30,,Cross Training,cross-training,Arena Cross,,,sim
+sexta,16:00,,Bike Indoor,bike-indoor,Sala de Bike,,,sim
+sexta,16:00,,PowerJump,powerjump,Sala de Ginástica,,,sim
+sexta,16:30,,Fitball,fitball,Sala de Ginástica,,,sim
+sexta,17:00,,RitBox,ritbox,Sala de Ginástica,,,sim
+sexta,17:30,,Alongamento,alongamento,Sala de Yoga,,,sim
+sexta,17:30,,Cross Training,cross-training,Arena Cross,,,sim
+sexta,17:30,,Kickboxing,kickboxing,Tatame,,,sim
+sexta,18:00,,Glúteos,gluteos,Sala de Ginástica,,,sim
+sexta,18:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+sexta,18:30,,Bike Indoor,bike-indoor,Sala de Bike,,,sim
+sexta,18:30,,Cross Training,cross-training,Arena Cross,,,sim
+sexta,18:30,,Step,step,Sala de Ginástica,,,sim
+sexta,18:45,,Jiu-Jítsu,jiu-jitsu,Tatame,,,sim
+sexta,20:00,,Kickboxing,kickboxing,Tatame,,,sim
+sabado,07:00,,Cross Training,cross-training,Arena Cross,,,sim
+sabado,07:00,15:00,Musculação (sala aberta),musculacao,Musculação,Equipe,Todos,sim
+sabado,07:15,,Spinning,spinning,Sala de Bike,,,sim
+sabado,07:30,,Bom Dia,,A definir,,,sim
+sabado,08:15,,Spinning,spinning,Sala de Bike,,,sim
+sabado,09:00,,Boxe,boxe,Tatame,,,sim
+sabado,09:00,,Hatha Yoga,hatha-yoga,Sala de Yoga,,,sim
+sabado,09:15,,Spinning,spinning,Sala de Bike,,,sim
+sabado,10:00,,Jiu-Jítsu,jiu-jitsu,Tatame,,,sim
+sabado,10:15,,Spinning,spinning,Sala de Bike,,,sim
+domingo,08:00,14:00,Musculação (sala aberta),musculacao,Musculação,Equipe,Todos,sim

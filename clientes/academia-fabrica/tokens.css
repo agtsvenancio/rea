@@ -1,0 +1,50 @@
+/*
+ * Fábrica Academia: tokens do design system (Tailwind CSS v4).
+ * Extraídos do CSS publicado em academiafabrica.com.br (16/11/2026).
+ * Uso: npm i @fontsource/anton @fontsource-variable/inter e importe este arquivo no CSS global.
+ */
+@import "tailwindcss";
+@import "@fontsource/anton";
+@import "@fontsource-variable/inter";
+
+@theme {
+  --color-carbon: #080a0b;
+  --color-graphite: #111417;
+  --color-steel: #22282d;
+  --color-off: #f3f5f2;
+  --color-brand: #a3c940;
+  --color-brand-bright: #c0ef4a;
+  --color-whatsapp: #25d366;
+
+  --font-display: "Anton", "Arial Narrow", sans-serif;
+  --font-sans: "Inter Variable", "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; background: var(--color-carbon); }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-off);
+    background: var(--color-carbon);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@utility display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: .01em;
+  line-height: .95;
+}
+
+@utility glow-brand {
+  box-shadow: 0 0 40px -8px #a3c94073;
+}
+
+/* Animação de entrada por scroll: adicione .revealed via IntersectionObserver (threshold .12). */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s, transform .7s; }
+.reveal.revealed { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
