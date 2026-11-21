@@ -1,0 +1,238 @@
+[
+  {
+    "url": "/",
+    "slug": "home",
+    "title": "Fast Ar",
+    "description": null,
+    "h1": "Especialistas em instalação e manutenção de ar-condicionado",
+    "h1_count": 1,
+    "sections": 7,
+    "widgets": [
+      "animated-headline",
+      "heading",
+      "button",
+      "icon-box",
+      "text-editor",
+      "spacer",
+      "image",
+      "n-carousel",
+      "icon-list"
+    ],
+    "images": [
+      "/wp-content/uploads/2026/03/icon-8.png",
+      "/wp-content/uploads/2026/03/icon-2.png",
+      "/wp-content/uploads/2026/03/icon-6.png",
+      "/wp-content/uploads/2026/03/avatar-1-150x150.png",
+      "/wp-content/uploads/2026/03/avatar-2-150x150.png",
+      "/wp-content/uploads/2026/04/electrolux-1536x353.png",
+      "/wp-content/uploads/2026/04/daikin-1024x214.png",
+      "/wp-content/uploads/2026/04/elgin-1024x432.png",
+      "/wp-content/uploads/2026/04/samsung-1024x158.png",
+      "/wp-content/uploads/2026/04/philco-1024x294.png",
+      "/wp-content/uploads/2026/04/midea-1024x395.png",
+      "/wp-content/uploads/2026/04/lg-1024x488.png",
+      "/wp-content/uploads/2026/04/fujitsu-1024x498.png",
+      "wp-content/uploads/2026/04/Entre-em-Contato.png"
+    ]
+  },
+  {
+    "url": "/sobre-nos/",
+    "slug": "sobre-nos",
+    "title": "Sobre Nós – Fast Ar",
+    "description": null,
+    "h1": "Sobre Nós",
+    "h1_count": 1,
+    "sections": 4,
+    "widgets": [
+      "lottie",
+      "tp-heading-title",
+      "icon-box",
+      "text-editor",
+      "icon-list",
+      "button",
+      "image",
+      "counter",
+      "spacer"
+    ],
+    "images": [
+      "/wp-content/uploads/2026/04/atendimento_realizado.png",
+      "/wp-content/uploads/2026/04/clientes_atendidos.png",
+      "/wp-content/uploads/2026/04/orcamentos_realizados.png",
+      "/wp-content/uploads/2026/04/analise_e_agendamento.png",
+      "/wp-content/uploads/2026/03/icon-9.png",
+      "/wp-content/uploads/2026/04/garantia_e_suporte.png"
+    ]
+  },
+  {
+    "url": "/servicos/",
+    "slug": "servicos",
+    "title": "Serviços – Fast Ar",
+    "description": null,
+    "h1": "Serviços",
+    "h1_count": 1,
+    "sections": 3,
+    "widgets": [
+      "lottie",
+      "tp-heading-title",
+      "image",
+      "icon-box",
+      "button",
+      "heading"
+    ],
+    "images": [
+      "/wp-content/uploads/2026/03/icon-8.png",
+      "/wp-content/uploads/2026/03/icon-2.png",
+      "/wp-content/uploads/2026/03/icon-6.png"
+    ]
+  },
+  {
+    "url": "/galeria/",
+    "slug": "galeria",
+    "title": "Galeria – Fast Ar",
+    "description": null,
+    "h1": "Galeria",
+    "h1_count": 1,
+    "sections": 2,
+    "widgets": [
+      "lottie",
+      "tp-heading-title",
+      "gallery"
+    ],
+    "images": [
+      "/wp-content/uploads/2026/03/young-electrician-or-repiar-service-technician-ope-2021-09-24-03-09-42-utc-min-min.jpg",
+      "/wp-content/uploads/2026/03/young-technician-opening-lid-of-air-conditioner-to-2021-09-24-03-09-41-utc-min-min.jpg",
+      "/wp-content/uploads/2026/03/young-workman-in-workwear-trying-to-find-out-reaso-2021-09-24-03-09-38-utc-min-min.jpg",
+      "/wp-content/uploads/2026/03/portrait-of-a-man-serving-the-air-conditioner-2022-02-05-12-46-15-utc-min.png"
+    ]
+  },
+  {
+    "url": "/faq/",
+    "slug": "faq",
+    "title": "FAQ – Fast Ar",
+    "description": null,
+    "h1": "FAQ",
+    "h1_count": 1,
+    "sections": 5,
+    "widgets": [
+      "lottie",
+      "tp-heading-title",
+      "icon-box",
+      "heading",
+      "image",
+      "tp-accordion",
+      "button"
+    ],
+    "images": [
+      "/wp-content/uploads/2026/04/servico-de-instalacao-de-ar-condicionado-1536x864-1.png",
+      "/wp-content/uploads/2026/04/limpeza-de-ar-condicionado-1536x1024-1.png",
+      "/wp-content/uploads/2026/04/servico-de-manutencao-de-ar-condicionado.png",
+      "/wp-content/uploads/2026/04/technician-installing-outdoor-air-conditioner-comp-2022-02-05-12-50-04-utc-min-min.png"
+    ]
+  },
+  {
+    "url": "/contato/",
+    "slug": "contato",
+    "title": "Contato – Fast Ar",
+    "description": null,
+    "h1": "Contato",
+    "h1_count": 1,
+    "sections": 3,
+    "widgets": [
+      "lottie",
+      "tp-heading-title",
+      "icon-box",
+      "tp-contact-form-7",
+      "html"
+    ],
+    "images": []
+  },
+  {
+    "url": "/servicos/instalacao-de-ar-condicionado/",
+    "slug": "servicos__instalacao-de-ar-condicionado",
+    "title": "Instalação de Ar-Condicionado – Fast Ar",
+    "description": null,
+    "h1": "Instalação de Ar-Condicionado",
+    "h1_count": 1,
+    "sections": 5,
+    "widgets": [
+      "lottie",
+      "tp-heading-title",
+      "icon-box",
+      "text-editor",
+      "button",
+      "spacer",
+      "image",
+      "icon-list"
+    ],
+    "images": [
+      "/wp-content/uploads/2026/04/servico-personalizado.png",
+      "/wp-content/uploads/2026/04/profissionais-qualificados.png",
+      "/wp-content/uploads/2026/04/instalacao-rapida-e-eficiente.png",
+      "/wp-content/uploads/2026/04/foco-na-satisfacao-do-clientes.png",
+      "/wp-content/uploads/2026/04/Fast-Ar-Instalacao570x500px-1.png"
+    ]
+  },
+  {
+    "url": "/servicos/limpeza-de-ar-condicionado/",
+    "slug": "servicos__limpeza-de-ar-condicionado",
+    "title": "Limpeza de Ar-Condicionado – Fast Ar",
+    "description": null,
+    "h1": "Limpeza de Ar-Condicionado",
+    "h1_count": 1,
+    "sections": 5,
+    "widgets": [
+      "lottie",
+      "tp-heading-title",
+      "icon-box",
+      "text-editor",
+      "button",
+      "spacer",
+      "image",
+      "icon-list"
+    ],
+    "images": [
+      "/wp-content/uploads/2026/04/servico-personalizado.png",
+      "/wp-content/uploads/2026/04/profissionais-qualificados.png",
+      "/wp-content/uploads/2026/04/instalacao-rapida-e-eficiente.png",
+      "/wp-content/uploads/2026/04/Saude_bem_estar.png",
+      "/wp-content/uploads/2026/04/Fast-Ar-Limpeza1500x1000px-1.png"
+    ]
+  },
+  {
+    "url": "/servicos/manutencao-preventiva/",
+    "slug": "servicos__manutencao-preventiva",
+    "title": "Manutenção Preventiva de Ar-condicionado – Fast Ar",
+    "description": null,
+    "h1": "Manutenção Preventiva de Ar-condicionado",
+    "h1_count": 1,
+    "sections": 5,
+    "widgets": [
+      "lottie",
+      "tp-heading-title",
+      "icon-box",
+      "text-editor",
+      "button",
+      "spacer",
+      "image",
+      "icon-list"
+    ],
+    "images": [
+      "/wp-content/uploads/2026/04/servico-personalizado.png",
+      "/wp-content/uploads/2026/04/profissionais-qualificados.png",
+      "/wp-content/uploads/2026/04/instalacao-rapida-e-eficiente.png",
+      "/wp-content/uploads/2026/04/Durabilidade-e-Economia.png",
+      "/wp-content/uploads/2026/04/Fast-Ar-Manutencao_1500x1000px.png"
+    ]
+  },
+  {
+    "url": "/404.html",
+    "slug": "404",
+    "title": "Página não encontrada – Fast Ar",
+    "description": null,
+    "h1": "Página não encontrada",
+    "h1_count": 1,
+    "sections": 2,
+    "widgets": [],
+    "images": []
+  }
+]
